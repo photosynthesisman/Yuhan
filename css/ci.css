@@ -1,0 +1,108 @@
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+.main_banner{   
+    background: url(../images/ci_intro.jpg) center 90% / cover no-repeat;
+}
+
+.ci.container {
+    padding: 8.1rem 0 20rem;
+    text-align: center;
+}
+.signature .strong {
+    margin-bottom: 5rem;
+    font-weight: 400;
+}
+.ci_br {
+    display: none;
+}
+.signature .signature_logo {
+    width: 100%;     
+    margin-bottom: 8.1rem;
+}
+.signature .signature_logo .fixedratio {
+    padding-top: 28.33%;
+    background: url(../images/signature.png) center center / cover no-repeat;
+}
+.signature h2, .color_system h2 {
+    margin-bottom: 0.5rem;
+}
+.signature h2 + p, .color_system h2 + p {
+    color: #ccc;
+    margin-bottom: 5rem;
+}
+.signature h2 + p + p {
+    margin-bottom: 2.7rem;
+}
+.signature .flex_button {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    margin-bottom: 8.1rem;
+}
+.signature .flex_button > div {
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 3.2rem;
+    border: 1px solid #009639;    
+    width: 19rem;
+    height: 6.4rem;
+    gap: 1rem;
+    transition: background .5s;
+}
+.signature .flex_button > div p {
+    transition: .5s;
+}
+.signature .flex_button > div span {
+    position: relative;
+    color: #009639;
+    font-size: 1.8rem;   
+    transition: .5s; 
+}
+.signature .flex_button > div:hover span::before {
+    background: #fff;    
+}
+.signature .flex_button > div span::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 0.15rem;
+    background: #009639;
+    bottom: 0;
+    transition: .5s;
+}
+.color_system .flex_color {
+    display: flex;
+    justify-content: center ;    
+    margin-bottom: 8.1rem;
+    gap: 2rem;
+}
+.color_system .flex_color > div {
+    width: 28.5rem;
+    height: 24.3rem;    
+    padding: 3rem;
+    box-sizing: border-box;
+    display: flex;    
+    flex-direction: column;
+    text-align: left;
+    justify-content: space-between;
+    color: #fff;    
+}
+.color_system .flex_color > div p {
+    line-height: 2rem;    
+}
+.color_system .flex_color > div:first-child {
+    background: #009639;
+}
+.color_system .flex_color > div:nth-child(2) {
+    background: #000000;
+}
+.color_system .flex_color > div:nth-child(3) {
+    background: #cd9236;
+}
+.color_system .flex_color > div:last-child {
+    background: #8f9194;
+}

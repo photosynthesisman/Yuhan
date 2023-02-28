@@ -1,0 +1,79 @@
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;    
+}
+.main_banner{    
+    background: url(../images/history_main_banner.jpg) 67% 55% no-repeat;
+}
+.map.container {
+    padding: 15rem 0 20rem;
+}
+.tab_wrapper { 
+    display: flex;      
+    border: 0.1rem solid #009639;
+    margin-bottom: 8.1rem;
+}
+.tab_wrapper li {    
+    flex: 1;
+    text-align: center;
+}
+.tab_wrapper li:nth-child(2) {
+    border-right: 0.1rem solid #009639;
+    border-left: 0.1rem solid #009639;
+}
+.tab_wrapper li a {    
+    display: block;
+    line-height: 6rem;
+    transition: 0.5s;
+}
+.tab_wrapper li a.active, .tab_wrapper li a:hover {
+    background: #009639;
+    color: #fff;
+}
+.map_table {
+    margin-top: 8.1rem !important;
+}
+.map_table table {
+    width: 100%;
+    margin-top: 0;
+    border-top: 2px solid #222;  
+}
+.map_table table .traffic {
+   position: relative;
+   display: flex;   
+   flex-wrap: wrap;   
+   gap: 1.2rem;
+   flex-direction: column;   
+}
+.map_table table .traffic:not(:last-child) {
+    margin-bottom: 2rem;
+}
+.map_table table .traffic p {
+    margin-left: 5rem; 
+    line-height: 1.6;               
+}
+.map_table table .traffic span {    
+    color: #009639;
+    position: absolute;    
+    top: 0;
+}
+.map_table table tbody tr th, .map_table table tbody tr td {    
+    padding: 2rem;
+    text-align: left; 
+    vertical-align: middle;   
+}
+.map_table table tbody tr th {
+    font-size: 1.8rem;
+    font-weight: 500;
+    border-right: 1px solid #cccccc;   
+    line-height: 1;  
+}
+.map_table table tbody > tr:not(:last-child) {
+    border-bottom: 1px solid #cccccc;    
+}
+.map_table table tbody > tr:last-child th {
+    vertical-align: top;   
+}
+.map_table table tbody > tr:last-child th, .map_table tbody tr:last-child td{    
+    border-bottom: 2px solid #222;
+}

@@ -1,0 +1,607 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>유한양행 리뉴얼</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Two+Tone" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Round" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Sharp" rel="stylesheet">  
+    
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/product.css">
+    <link rel="stylesheet" href="css/responsive.css">
+
+    <link rel="shortcut icon" href="images/favicon/favicon.ico">
+    <link rel="apple-touch-icon" sizes="57x57" href="images/favicon/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="images/favicon/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="images/favicon/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="images/favicon/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="images/favicon/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="images/favicon/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="images/favicon/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="images/favicon/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="images/favicon/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="images/favicon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="images/favicon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon/favicon-16x16.png">
+    <link rel="manifest" href="images/favicon/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="images/favicon/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js" integrity="sha512-3n19xznO0ubPpSwYCRRBgHh63DrV+bdZfHK52b1esvId4GsfwStQNPJFjeQos2h3JwCmZl0/LgLxSKMAI55hgw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>      
+    
+    <script src="./js/mixitup.min.js"></script>
+    <script src="./js/sub.js"></script>    
+</head>
+<body>
+    <header> 
+        <div class="sub_bg"></div>       
+        <div class="header_box">            
+            <div class="header_wrap">  
+                <h1 class="logo"><a href="./index.html">YUHAN logo</a></h1>
+                <nav>                      
+                    <ul class="mainMenu">
+                        <li><a href="" class="con_subOfsub" data-text="유한소개">유한소개</a>
+                            <ul class="subMenu company">
+                                <li><a href="/intro.html">회사개요</a></li>
+                                <li><a href="">CEO 메시지</a></li>
+                                <li><a href="./history.html">회사연혁</a></li>
+                                <li><a href="">가족회사</a></li>
+                                <li><a href="./map.html">오시는 길</a></li>
+                                <li><a href="./yuilhan.html">창업자유일한</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="" class="con_subOfsub" data-text="제품정보">제품정보</a>
+                            <ul class="subMenu product">
+                                <li><a href="./product.html">제품검색</a></li>
+                                <li><a href="">제품소식</a></li>
+                                <li><a href="">제품 외형별 검색</a></li>
+                                <li><a href="">가정상비약</a></li>
+                                <li><a href="./brand.html">브랜드 이야기</a></li>
+                                <li><a href="">약국찾기</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="" class="con_subOfsub" data-text="연구개발">연구개발</a>
+                            <ul class="subMenu">
+                                <li><a href="">미션 & 비젼</a></li>
+                                <li><a href="">연구개발 전략</a></li>
+                                <li><a href="">연구개발 활동</a></li>
+                                <li><a href="">파이프라인</a></li>
+                                <li><a href="">연구결과 발표</a></li>
+                                <li><a href="">주요성과</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="" class="con_subOfsub" data-text="투자정보">투자정보</a>
+                            <ul class="subMenu">
+                                <li><a href="">공시정보</a></li>
+                                <li><a href="">재무정보</a></li>
+                                <li><a href="">주식정보</a></li>
+                                <li><a href="">기업지배구조</a></li>
+                                <li><a href="">IR 자료실</a></li>
+                                <li><a href="">ANNUAL REPORT</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="" class="con_subOfsub" data-text="홍보">홍보</a>
+                            <ul class="subMenu">
+                                <li><a href="">언론보도</a></li>
+                                <li><a href="">건강의 벗</a></li>
+                                <li><a href="./ci.html">CI소개</a></li>
+                                <li><a href="">미디어</a></li>
+                                <li><a href="">공지사항</a></li>                                
+                            </ul>
+                        </li>
+                        <li><a href="" class="con_subOfsub" data-text="CSR">CSR</a>
+                            <ul class="subMenu">
+                                <li><a href="">준법경영</a></li>
+                                <li><a href="">사회공헌</a></li>
+                                <li><a href="">환경&middot;안전경영</a></li>
+                                <li><a href="">부패방지방침</a></li>
+                            </ul>
+                        </li>
+                    </ul>                   
+                </nav>
+                <ul class="recruit_lang">
+                    <li><a href="">인재채용</a></li>                    
+                    <li class="lnag_kor">
+                        <a href="">KOR</a>
+                        <span class="material-icons-sharp">expand_more</span>
+                        <a href="" class="lang hidden">ENG</a>
+                    </li>                                           
+                    <li>
+                        <span class="material-icons-sharp toggle_pc active">menu</span>
+                    </li>
+                </ul>    
+            </div>                     
+        </div>          
+    </header>  
+    <main>
+        <div class="toggle">
+            <div class="flex_box">
+                <div class="site_map">
+                    <p class="eng">site map</p>
+                </div>
+                <div class="introduce">
+                    <div class="txt_box">
+                        <h2>유한소개</h2>
+                        <ul>
+                            <li><a href="./intro.html">회사개요</a></li>
+                            <li><a href=""><em class="eng">CEO</em>메시지</a></li>
+                            <li><a href="./history.html">회사연혁</a></li>
+                            <li><a href="">가족회사</a></li>
+                            <li><a href="./map.html">오시는 길</a></li>
+                            <li><a href="./yuilhan.html">창업자 유일한</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="product">
+                    <div class="txt_box">
+                        <h2>제품정보</h2>
+                        <ul>
+                            <li><a href="./product.html">제품검색</a></li>
+                            <li><a href="">제품소식</a></li>
+                            <li><a href="">제품 외형별 검색</a></li>
+                            <li><a href="">가정상비약</a></li>
+                            <li><a href="./brand.html">브랜드 이야기</a></li>
+                            <li><a href="">약국찾기</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="rnd">
+                    <div class="txt_box">
+                        <h2>연구개발</h2>
+                        <ul>
+                            <li><a href="">미션&amp;비전</a></li>
+                            <li><a href="">연구개발 전략</a></li>
+                            <li><a href="">연구개발 활동</a></li>
+                            <li><a href="">파이프라인</a></li>
+                            <li><a href="">연구결과 발표</a></li>
+                            <li><a href="">주요성과</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="invest">
+                    <div class="txt_box">
+                        <h2>투자정보</h2>
+                        <ul>
+                            <li><a href="">공시정보</a></li>
+                            <li><a href="">재무정보</a></li>
+                            <li><a href="">주식정보</a></li>
+                            <li><a href="">기업지배구조</a></li>
+                            <li><a href=""><em class="eng">IR</em>자료실</a></li>
+                            <li><a href="" class="eng">Annual Report</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="promote">
+                    <div class="txt_box">
+                        <h2>홍보</h2>
+                        <ul>
+                            <li><a href="">언론보도</a></li>
+                            <li><a href="">건강의 벗</a></li>
+                            <li><a href="./ci.html"><em class="eng">CI</em> 소개</a></li>
+                            <li><a href="">미디어</a></li>
+                            <li><a href="">공지사항</a></li>                    
+                        </ul>
+                    </div>
+                </div>
+                <div class="csr">
+                    <div class="txt_box">
+                        <h2 class="eng">CSR</h2>
+                        <ul>
+                            <li><a href="">준법경영</a></li>
+                            <li><a href="">사회공헌</a></li>
+                            <li><a href="">환경&middot;안전경영</a></li>
+                            <li><a href="">부패방지방침</a></li>
+                        </ul>
+                    </div>
+                </div>            
+            </div>
+            <div class="close">
+                <span class="material-icons-sharp">close</span>
+            </div>
+        </div>   
+        <div class="side_box">
+            <div class="logo_box">
+                <h2 class="side_logo"><a href="./index.html">side_logo</a></h2>
+                <span class="material-icons-sharp close">add</span>
+            </div>
+            <nav>                      
+                <ul class="sideMenu">
+                    <li><a href="" class="cf">유한소개<span class="material-icons-sharp">add</span></a>
+                        <ul class="sideMenu_sub company">
+                            <li><a href="./intro.html">회사개요</a></li>
+                            <li><a href="">CEO 메시지</a></li>
+                            <li><a href="./history.html">회사연혁</a></li>
+                            <li><a href="">가족회사</a></li>
+                            <li><a href="./map.html">오시는 길</a></li>
+                            <li><a href="./yuilhan.html">창업자유일한</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="" class="cf">제품정보<span class="material-icons-sharp">add</span></a>
+                        <ul class="sideMenu_sub product">
+                            <li><a href="./product.html">제품검색</a></li>
+                            <li><a href="">제품소식</a></li>
+                            <li><a href="">제품 외형별 검색</a></li>
+                            <li><a href="">가정상비약</a></li>
+                            <li><a href="./brand.html">브랜드 이야기</a></li>
+                            <li><a href="">약국찾기</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="" class="cf">연구개발<span class="material-icons-sharp">add</span></a>
+                        <ul class="sideMenu_sub">
+                            <li><a href="">미션 & 비젼</a></li>
+                            <li><a href="">연구개발 전략</a></li>
+                            <li><a href="">연구개발 활동</a></li>
+                            <li><a href="">파이프라인</a></li>
+                            <li><a href="">연구결과 발표</a></li>
+                            <li><a href="">주요성과</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="" class="cf">투자정보<span class="material-icons-sharp">add</span></a>
+                        <ul class="sideMenu_sub">
+                            <li><a href="">공시정보</a></li>
+                            <li><a href="">재무정보</a></li>
+                            <li><a href="">주식정보</a></li>
+                            <li><a href="">기업지배구조</a></li>
+                            <li><a href="">IR 자료실</a></li>
+                            <li><a href="">ANNUAL REPORT</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="" class="cf">홍보<span class="material-icons-sharp">add</span></a>
+                        <ul class="sideMenu_sub">
+                            <li><a href="">언론보도</a></li>
+                            <li><a href="">건강의 벗</a></li>
+                            <li><a href="./ci.html">CI소개</a></li>
+                            <li><a href="">미디어</a></li>
+                            <li><a href="">공지사항</a></li>                                
+                        </ul>
+                    </li>
+                    <li><a href="" class="cf">CSR<span class="material-icons-sharp">add</span></a>
+                        <ul class="sideMenu_sub">
+                            <li><a href="">준법경영</a></li>
+                            <li><a href="">사회공헌</a></li>
+                            <li><a href="">환경&middot;안전경영</a></li>
+                            <li><a href="">부패방지방침</a></li>
+                        </ul>
+                    </li>
+                </ul>                   
+            </nav>
+            <div class="side_sub">
+                <div class="side_sub_flex">
+                    <div class="side_recurit"><a href="">인재채용</a></div>
+                    <div class="side_lang"><a href="">KOR<span class="material-icons-sharp">keyboard_arrow_down</span></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="side_nav"></div>   
+        <section class="main_banner">            
+            <h2 class="main_tt">제품정보</h2>            
+        </section>
+        <section class="sp_nav_bar">  
+            <h2 class="sp_nav_tt hidden">서브페이지 네비게이션바</h2>          
+            <div class="container">
+                <div class="HL_bg">
+                    <a href="./index.html" class="indent">메인페이지 바로가기</a>
+                    <p></p>
+                </div>
+                <div class="sp_nav_MM">
+                    <div>
+                        <p>제품정보</p>
+                        <span class="material-icons-sharp">expand_more</span>
+                    </div>
+                    <div class="sp_nav_menu">
+                        <div><a href="">유한소개</a></div>
+                        <div class="selected"><a href="">제품정보</a></div>
+                        <div><a href="">연구개발</a></div>
+                        <div><a href="">투자정보</a></div>
+                        <div><a href="./ci.html">홍보</a></div>
+                        <div><a href="">CSR</a></div>                        
+                    </div>
+                </div>
+                <div class="sp_nav_SM">
+                    <div>
+                        <p>제품검색</p>
+                        <span class="material-icons-sharp">expand_more</span>
+                    </div>
+                    <div class="sp_nav_sub">
+                        <div class="selected"><a href="#">제품검색</a></div>
+                        <div><a href="">제품소식</a></div>
+                        <div><a href="">제품 외형별 검색</a></div>
+                        <div><a href="">가정상비약</a></div>
+                        <div><a href="./brand.html">브랜드 이야기</a></div>                        
+                        <div><a href="">약국찾기</a></div>                        
+                    </div>
+                </div>
+            </div>         
+        </section>    
+        <section class="search">
+            <h2 class="searchTT hidden">검색 섹션</h2>
+            <div class="container">
+                <div class="flexBox">
+                    <h3 class="strong">유한양행의 제품을 제품명, 초성, 분류별로 검색 하실 수 있습니다.</h3>
+                    <div class="search">
+                        <form action="#" method="post">                           
+                            <label for="search" class="hidden">제품 검색</label>
+                            <input type="text" name="search" id="search" value="" placeholder="제품명으로 검색하실 수 있습니다">
+                            <button>검색</button>
+                        </form>
+                    </div>
+                    <div class="search_tab">
+                        <button type="button" data-filter="all">전체제품 보기</button>
+                        <button type="button" data-filter=".pro">전문의약품</button>
+                        <button type="button" data-filter=".normal">일반의약품</button>
+                        <button type="button" data-filter=".except">의약외품</button>
+                        <button type="button" data-filter=".health">건강기능식품</button>
+                        <button type="button" data-filter=".living">생활용품</button>
+                        <button type="button" data-filter=".animal">동물약품</button>
+                        <button type="button" data-filter=".medical">의료기기 / 진단시약</button>
+                        <button type="button" data-filter=".etc">기타 / 염모제</button>
+                        <button type="button" data-filter=".dental">치과용품</button>                      
+                    </div>
+                </div>
+            </div>
+        </section>    
+        <section class="products">
+            <div class="container">
+                <div class="mix-wrapper">
+                    <div class="mix normal" data-order="1">  
+                        <div class="line left"></div>                                                             
+                        <div class="line top"></div>                                                             
+                        <div class="line right"></div>                                                             
+                        <div class="line bottom"></div>                                                             
+                        <a href="" class="indent hidden">해당 제품 바로가기</a>
+                        <div class="product_img" style="background-image: url(./images/famotidine.jpg);"></div>
+                        <div class="product_des">
+                            <p>일반의약품</p>
+                            <h5 class="con_subOfsub">파모큐정 10mg</h5>
+                            <small>소화성궤양용제</small>
+                        </div>
+                    </div>
+                    <div class="mix normal" data-order="2">
+                        <div class="line left"></div>                                                             
+                        <div class="line top"></div>                                                             
+                        <div class="line right"></div>                                                             
+                        <div class="line bottom"></div>  
+                        <a href="" class="indent hidden">해당 제품 바로가기</a>
+                        <div class="product_img" style="background-image: url(./images/yuhanvitamin.jpg);"></div>
+                        <div class="product_des">
+                            <p>일반의약품</p>
+                            <h5 class="con_subOfsub">유한비타민씨디정</h5>
+                            <small>비타민제 C,D</small>
+                        </div>
+                    </div>
+                    <div class="mix normal" data-order="3">
+                        <div class="line left"></div>                                                             
+                        <div class="line top"></div>                                                             
+                        <div class="line right"></div>                                                             
+                        <div class="line bottom"></div>  
+                        <a href="" class="indent hidden">해당 제품 바로가기</a>
+                        <div class="product_img" style="background-image: url(./images/mag-bspeed.jpg);"></div>
+                        <div class="product_des">
+                            <p>일반의약품</p>
+                            <h5 class="con_subOfsub">마그비스피드액</h5>
+                            <small>액상형 마그네슘 제제</small>
+                        </div>
+                    </div>
+                    <div class="mix normal" data-order="4">
+                        <div class="line left"></div>                                                             
+                        <div class="line top"></div>                                                             
+                        <div class="line right"></div>                                                             
+                        <div class="line bottom"></div>  
+                        <a href="" class="indent hidden">해당 제품 바로가기</a>
+                        <div class="product_img" style="background-image: url(./images/antiphlamineCool.jpg);"></div>
+                        <div class="product_des">
+                            <p>일반의약품</p>
+                            <h5 class="con_subOfsub">안티푸라민 쿨파워 플러스</h5>
+                            <small>멘톨 주성분의 외용제</small>
+                        </div>
+                    </div>
+                    <div class="mix health" data-order="5">
+                        <div class="line left"></div>                                                             
+                        <div class="line top"></div>                                                             
+                        <div class="line right"></div>                                                             
+                        <div class="line bottom"></div>  
+                        <a href="" class="indent hidden">해당 제품 바로가기</a>
+                        <div class="product_img" style="background-image: url(./images/baeksuo.jpg);"></div>
+                        <div class="product_des">
+                            <p>건강기능식품</p>
+                            <h5 class="con_subOfsub">유한 백수오로얄</h5>
+                            <small>캡슐제</small>
+                        </div>
+                    </div>
+                    <div class="mix normal" data-order="6">
+                        <div class="line left"></div>                                                             
+                        <div class="line top"></div>                                                             
+                        <div class="line right"></div>                                                             
+                        <div class="line bottom"></div>  
+                        <a href="" class="indent hidden">해당 제품 바로가기</a>
+                        <div class="product_img" style="background-image: url(./images/mag-bmax.jpg);"></div>
+                        <div class="product_des">
+                            <p>일반의약품</p>
+                            <h5 class="con_subOfsub">마그비 맥스</h5>
+                            <small>비타민 무기질제</small>
+                        </div>
+                    </div>
+                    <div class="mix pro" data-order="7">
+                        <div class="line left"></div>                                                             
+                        <div class="line top"></div>                                                             
+                        <div class="line right"></div>                                                             
+                        <div class="line bottom"></div>  
+                        <a href="" class="indent hidden">해당 제품 바로가기</a>
+                        <div class="product_img" style="background-image: url(./images/leclaza.jpg);"></div>
+                        <div class="product_des">
+                            <p>전문의약품</p>
+                            <h5 class="con_subOfsub">렉라자정80mg</h5>
+                            <small>항악성종양제</small>
+                        </div>
+                    </div>
+                    <div class="mix except" data-order="8">
+                        <div class="line left"></div>                                                             
+                        <div class="line top"></div>                                                             
+                        <div class="line right"></div>                                                             
+                        <div class="line bottom"></div>  
+                        <a href="" class="indent hidden">해당 제품 바로가기</a>
+                        <div class="product_img" style="background-image: url(./images/antiphlamine.jpg);"></div>
+                        <div class="product_des">
+                            <p>의약외품</p>
+                            <h5 class="con_subOfsub">안티푸라민연고</h5>
+                            <small>담황색의 연고</small>
+                        </div>
+                    </div>
+                    <div class="mix etc" data-order="9">
+                        <div class="line left"></div>                                                             
+                        <div class="line top"></div>                                                             
+                        <div class="line right"></div>                                                             
+                        <div class="line bottom"></div>  
+                        <a href="" class="indent hidden">해당 제품 바로가기</a>
+                        <div class="product_img" style="background-image: url(./images/tomorrowN.jpg);"></div>
+                        <div class="product_des">
+                            <p>기타/염모제</p>
+                            <h5 class="con_subOfsub">내일엔</h5>
+                            <small>연한 갈색의 액상</small>
+                        </div>
+                    </div>
+                    <div class="mix health" data-order="10">
+                        <div class="line left"></div>                                                             
+                        <div class="line top"></div>                                                             
+                        <div class="line right"></div>                                                             
+                        <div class="line bottom"></div>  
+                        <a href="" class="indent hidden">해당 제품 바로가기</a>
+                        <div class="product_img" style="background-image: url(./images/sensebalance.jpg);"></div>
+                        <div class="product_des">
+                            <p>건강기능식품</p>
+                            <h5 class="con_subOfsub">센스밸런스</h5>
+                            <small>자주색 타원형 제피정제</small>
+                        </div>
+                    </div>
+                    <div class="mix pro" data-order="11">
+                        <div class="line left"></div>                                                             
+                        <div class="line top"></div>                                                             
+                        <div class="line right"></div>                                                             
+                        <div class="line bottom"></div>  
+                        <a href="" class="indent hidden">해당 제품 바로가기</a>
+                        <div class="product_img" style="background-image: url(./images/easycare.jpg);"></div>
+                        <div class="product_des">
+                            <p>전문의약품</p>
+                            <h5 class="con_subOfsub">유한이지케어 네일라카</h5>
+                            <small>기생성 피부질환용제</small>
+                        </div>
+                    </div>
+                    <div class="mix pro" data-order="12">
+                        <div class="line left"></div>                                                             
+                        <div class="line top"></div>                                                             
+                        <div class="line right"></div>                                                             
+                        <div class="line bottom"></div>  
+                        <a href="" class="indent hidden">해당 제품 바로가기</a>
+                        <div class="product_img" style="background-image: url(./images/Yucox.jpg);"></div>
+                        <div class="product_des">
+                            <p>전문의약품</p>
+                            <h5 class="con_subOfsub">유콕스캡슐200밀리그램</h5>
+                            <small>선택적 COX-2 저해제</small>
+                        </div>
+                    </div>		
+                </div>
+            </div>            
+        </section>
+    </main>
+    <footer>
+        <div class="container">
+            <div class="second_floor">
+                <div class="site_box">
+                    <ul class="site">
+                        <li><a href="">사이트이용약관</a></li>
+                        <li><a href="">개인정보처리방침</a></li>
+                        <li><a href="">영상정보처리기기 운영관리 방침</a></li>
+                        <li><a href="">이메일무단수집거부</a></li>
+                        <li><a href="">스팸정책</a></li>
+                        <li><a href="">법적고지</a></li>
+                        <li><a href="">사이트이용 도움말</a></li>
+                    </ul>
+                </div>
+                <div class="FB_box">
+                    <div class="family_box">
+                        <ul class="family_main">
+                            <li class="st"><p class="emphasis">Family Site</p><span class="material-icons-sharp">expand_more</span>
+                                <ul class="family">
+                                    <li><a href="">삐콤씨</a></li>
+                                    <li><a href="">센스데이</a></li>
+                                    <li><a href="">지르텍</a></li>
+                                    <li><a href="">유한킴벌리</a></li>
+                                    <li><a href="">유한크로락스</a></li>
+                                    <li><a href="">유한메디카</a></li>                            
+                                </ul>  
+                            </li>
+                        </ul>                                                    
+                    </div>                    
+                    <div class="gotop" data-menuanchor="page1">
+                        <a href="" class="indent">to page top</a>
+                        <span class="material-icons-sharp">arrow_drop_up</span>
+                        <p>top</p>                                   
+                    </div>    
+                </div>                                                        
+            </div>
+            <div class="first_floor cf">
+                <h1>yuhan logo</h1>
+                <div class="txt">
+                    <ul class="cf">
+                        <li>서울시 동작구 노량진로 74 </li>
+                        <li>문의전화 : 02)828-0181</li>
+                        <li>FAX : 02)828-0050</li>
+                        <li>대표자 : 조욱제</li>
+                        <li>사업자등록번호 : 118-81-00601</li>
+                    </ul>
+                    <p>Copyright &copy; YUHAN. All right reserved.</p>                
+                </div>
+            </div>
+        </div>  
+        <hr>          
+    </footer>       
+    <script>
+        var mixer = mixitup('.mix-wrapper',{
+            animation: {
+                animateResizeContainer: false
+            }
+        });
+        $('.mix-wrapper').children('div').each(function(){
+            $(this).mouseover(function(){
+                $(this).find('.left').stop().animate({top:0},800);
+                $(this).find('.top').stop().animate({right:0},800);
+                $(this).find('.right').stop().animate({bottom:0},800);
+                $(this).find('.bottom').stop().animate({left:0},800);
+            })
+            $(this).mouseleave(function(){
+                $(this).find('.left').stop().animate({top:100+'%'},800);
+                $(this).find('.top').stop().animate({right:100+'%'},800);
+                $(this).find('.right').stop().animate({bottom:100+'%'},800);
+                $(this).find('.bottom').stop().animate({left:100+'%'},800);
+            })
+        });
+        var availableTags = [
+            "파모큐정 10mg",
+            "유한비타민씨디정",
+            "마그비스피드액",
+            "안티푸라민 쿨파워 플러스",
+            "유한 백수오로얄",
+            "마그비 맥스",
+            "렉라자정80mg",
+            "안티푸라민연고",
+            "내일엔",
+            "센스밸런스",
+            "유한이지케어 네일라카",
+            "유콕스캡슐200밀리그램"
+        ];
+        $( "#search" ).autocomplete({
+            source: availableTags
+        });  
+    </script>
+</body>
+</html>

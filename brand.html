@@ -1,0 +1,636 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>유한양행 리뉴얼</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Two+Tone" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Round" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Sharp" rel="stylesheet">    
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/brand.css">
+    <link rel="stylesheet" href="css/responsive.css">
+
+    <link rel="shortcut icon" href="images/favicon/favicon.ico">
+    <link rel="apple-touch-icon" sizes="57x57" href="images/favicon/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="images/favicon/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="images/favicon/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="images/favicon/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="images/favicon/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="images/favicon/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="images/favicon/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="images/favicon/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="images/favicon/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="images/favicon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="images/favicon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon/favicon-16x16.png">
+    <link rel="manifest" href="images/favicon/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="images/favicon/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js" integrity="sha512-3n19xznO0ubPpSwYCRRBgHh63DrV+bdZfHK52b1esvId4GsfwStQNPJFjeQos2h3JwCmZl0/LgLxSKMAI55hgw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>          
+    
+    <script src="./js/sub.js"></script>    
+</head>
+<body>
+    <header> 
+        <div class="sub_bg"></div>       
+        <div class="header_box">            
+            <div class="header_wrap">  
+                <h1 class="logo"><a href="./index.html">YUHAN logo</a></h1>
+                <nav>                      
+                    <ul class="mainMenu">
+                        <li><a href="" class="con_subOfsub">유한소개</a>
+                            <ul class="subMenu company">
+                                <li><a href="./intro.html">회사개요</a></li>
+                                <li><a href="">CEO 메시지</a></li>
+                                <li><a href="./history.html">회사연혁</a></li>
+                                <li><a href="">가족회사</a></li>
+                                <li><a href="./map.html">오시는 길</a></li>
+                                <li><a href="./yuilhan.html">창업자유일한</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="" class="con_subOfsub">제품정보</a>
+                            <ul class="subMenu product">
+                                <li><a href="./product.html">제품검색</a></li>
+                                <li><a href="">제품소식</a></li>
+                                <li><a href="">제품 외형별 검색</a></li>
+                                <li><a href="">가정상비약</a></li>
+                                <li><a href="./brand.html">브랜드 이야기</a></li>
+                                <li><a href="">약국찾기</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="" class="con_subOfsub">연구개발</a>
+                            <ul class="subMenu">
+                                <li><a href="">미션 & 비젼</a></li>
+                                <li><a href="">연구개발 전략</a></li>
+                                <li><a href="">연구개발 활동</a></li>
+                                <li><a href="">파이프라인</a></li>
+                                <li><a href="">연구결과 발표</a></li>
+                                <li><a href="">주요성과</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="" class="con_subOfsub">투자정보</a>
+                            <ul class="subMenu">
+                                <li><a href="">공시정보</a></li>
+                                <li><a href="">재무정보</a></li>
+                                <li><a href="">주식정보</a></li>
+                                <li><a href="">기업지배구조</a></li>
+                                <li><a href="">IR 자료실</a></li>
+                                <li><a href="">ANNUAL REPORT</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="" class="con_subOfsub">홍보</a>
+                            <ul class="subMenu">
+                                <li><a href="">언론보도</a></li>
+                                <li><a href="">건강의 벗</a></li>
+                                <li><a href="./ci.html">CI소개</a></li>
+                                <li><a href="">미디어</a></li>
+                                <li><a href="">공지사항</a></li>                                
+                            </ul>
+                        </li>
+                        <li><a href="" class="con_subOfsub">CSR</a>
+                            <ul class="subMenu">
+                                <li><a href="">준법경영</a></li>
+                                <li><a href="">사회공헌</a></li>
+                                <li><a href="">환경&middot;안전경영</a></li>
+                                <li><a href="">부패방지방침</a></li>
+                            </ul>
+                        </li>
+                    </ul>                   
+                </nav>
+                <ul class="recruit_lang">
+                    <li><a href="">인재채용</a></li>                    
+                    <li class="lnag_kor">
+                        <a href="">KOR</a>
+                        <span class="material-icons-sharp">expand_more</span>
+                        <a href="" class="lang hidden">ENG</a>
+                    </li>                                           
+                    <li>
+                        <span class="material-icons-sharp toggle_pc active">menu</span>
+                    </li>
+                </ul>     
+            </div>                     
+        </div>          
+    </header>  
+    <main>
+        <div class="toggle">
+            <div class="flex_box">
+                <div class="site_map">
+                    <p class="eng">site map</p>
+                </div>
+                <div class="introduce">
+                    <div class="txt_box">
+                        <h2>유한소개</h2>
+                        <ul>
+                            <li><a href="./intro.html">회사개요</a></li>
+                            <li><a href=""><em class="eng">CEO</em>메시지</a></li>
+                            <li><a href="./history.html">회사연혁</a></li>
+                            <li><a href="">가족회사</a></li>
+                            <li><a href="./map.html">오시는 길</a></li>
+                            <li><a href="./yuilhan.html">창업자 유일한</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="product">
+                    <div class="txt_box">
+                        <h2>제품정보</h2>
+                        <ul>
+                            <li><a href="./product.html">제품검색</a></li>
+                            <li><a href="">제품소식</a></li>
+                            <li><a href="">제품 외형별 검색</a></li>
+                            <li><a href="">가정상비약</a></li>
+                            <li><a href="./brand.html">브랜드 이야기</a></li>
+                            <li><a href="">약국찾기</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="rnd">
+                    <div class="txt_box">
+                        <h2>연구개발</h2>
+                        <ul>
+                            <li><a href="">미션&amp;비전</a></li>
+                            <li><a href="">연구개발 전략</a></li>
+                            <li><a href="">연구개발 활동</a></li>
+                            <li><a href="">파이프라인</a></li>
+                            <li><a href="">연구결과 발표</a></li>
+                            <li><a href="">주요성과</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="invest">
+                    <div class="txt_box">
+                        <h2>투자정보</h2>
+                        <ul>
+                            <li><a href="">공시정보</a></li>
+                            <li><a href="">재무정보</a></li>
+                            <li><a href="">주식정보</a></li>
+                            <li><a href="">기업지배구조</a></li>
+                            <li><a href=""><em class="eng">IR</em>자료실</a></li>
+                            <li><a href="" class="eng">Annual Report</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="promote">
+                    <div class="txt_box">
+                        <h2>홍보</h2>
+                        <ul>
+                            <li><a href="">언론보도</a></li>
+                            <li><a href="">건강의 벗</a></li>
+                            <li><a href="./ci.html"><em class="eng">CI</em> 소개</a></li>
+                            <li><a href="">미디어</a></li>
+                            <li><a href="">공지사항</a></li>                    
+                        </ul>
+                    </div>
+                </div>
+                <div class="csr">
+                    <div class="txt_box">
+                        <h2 class="eng">CSR</h2>
+                        <ul>
+                            <li><a href="">준법경영</a></li>
+                            <li><a href="">사회공헌</a></li>
+                            <li><a href="">환경&middot;안전경영</a></li>
+                            <li><a href="">부패방지방침</a></li>
+                        </ul>
+                    </div>
+                </div>            
+            </div>
+            <div class="close">
+                <span class="material-icons-sharp">close</span>
+            </div>
+        </div>   
+        <div class="side_box">
+            <div class="logo_box">
+                <h2 class="side_logo"><a href="./index.html">side_logo</a></h2>
+                <span class="material-icons-sharp close">add</span>
+            </div>
+            <nav>                      
+                <ul class="sideMenu">
+                    <li><a href="" class="cf">유한소개<span class="material-icons-sharp">add</span></a>
+                        <ul class="sideMenu_sub company">
+                            <li><a href="./intro.html">회사개요</a></li>
+                            <li><a href="">CEO 메시지</a></li>
+                            <li><a href="./history.html">회사연혁</a></li>
+                            <li><a href="">가족회사</a></li>
+                            <li><a href="./map.html">오시는 길</a></li>
+                            <li><a href="./yuilhan.html">창업자유일한</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="" class="cf">제품정보<span class="material-icons-sharp">add</span></a>
+                        <ul class="sideMenu_sub product">
+                            <li><a href="./product.html">제품검색</a></li>
+                            <li><a href="">제품소식</a></li>
+                            <li><a href="">제품 외형별 검색</a></li>
+                            <li><a href="">가정상비약</a></li>
+                            <li><a href="./brand.html">브랜드 이야기</a></li>
+                            <li><a href="">약국찾기</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="" class="cf">연구개발<span class="material-icons-sharp">add</span></a>
+                        <ul class="sideMenu_sub">
+                            <li><a href="">미션 & 비젼</a></li>
+                            <li><a href="">연구개발 전략</a></li>
+                            <li><a href="">연구개발 활동</a></li>
+                            <li><a href="">파이프라인</a></li>
+                            <li><a href="">연구결과 발표</a></li>
+                            <li><a href="">주요성과</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="" class="cf">투자정보<span class="material-icons-sharp">add</span></a>
+                        <ul class="sideMenu_sub">
+                            <li><a href="">공시정보</a></li>
+                            <li><a href="">재무정보</a></li>
+                            <li><a href="">주식정보</a></li>
+                            <li><a href="">기업지배구조</a></li>
+                            <li><a href="">IR 자료실</a></li>
+                            <li><a href="">ANNUAL REPORT</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="" class="cf">홍보<span class="material-icons-sharp">add</span></a>
+                        <ul class="sideMenu_sub">
+                            <li><a href="">언론보도</a></li>
+                            <li><a href="">건강의 벗</a></li>
+                            <li><a href="./ci.html">CI소개</a></li>
+                            <li><a href="">미디어</a></li>
+                            <li><a href="">공지사항</a></li>                                
+                        </ul>
+                    </li>
+                    <li><a href="" class="cf">CSR<span class="material-icons-sharp">add</span></a>
+                        <ul class="sideMenu_sub">
+                            <li><a href="">준법경영</a></li>
+                            <li><a href="">사회공헌</a></li>
+                            <li><a href="">환경&middot;안전경영</a></li>
+                            <li><a href="">부패방지방침</a></li>
+                        </ul>
+                    </li>
+                </ul>                   
+            </nav>
+            <div class="side_sub">
+                <div class="side_sub_flex">
+                    <div class="side_recurit"><a href="">인재채용</a></div>
+                    <div class="side_lang"><a href="">KOR<span class="material-icons-sharp">keyboard_arrow_down</span></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="side_nav"></div>   
+        <section class="main_banner">            
+            <h2 class="main_tt">브랜드이야기</h2>            
+        </section>
+        <section class="sp_nav_bar">  
+            <h2 class="sp_nav_tt hidden">서브페이지 네비게이션바</h2>          
+            <div class="container">
+                <div class="HL_bg">
+                    <a href="./index.html" class="indent">메인페이지 바로가기</a>
+                    <p></p>
+                </div>
+                <div class="sp_nav_MM">
+                    <div>
+                        <p>제품정보</p>
+                        <span class="material-icons-sharp">expand_more</span>
+                    </div>
+                    <div class="sp_nav_menu">
+                        <div><a href="">유한소개</a></div>
+                        <div class="selected"><a href="">제품정보</a></div>
+                        <div><a href="">연구개발</a></div>
+                        <div><a href="">투자정보</a></div>
+                        <div><a href="">홍보</a></div>
+                        <div><a href="">CSR</a></div>                        
+                    </div>
+                </div>
+                <div class="sp_nav_SM">
+                    <div>
+                        <p>브랜드이야기</p>
+                        <span class="material-icons-sharp">expand_more</span>
+                    </div>
+                    <div class="sp_nav_sub">
+                        <div><a href="./product.html">제품검색</a></div>
+                        <div><a href="">제품소식</a></div>
+                        <div><a href="">제품 외형별 검색</a></div>
+                        <div><a href="">가정상비약</a></div>
+                        <div class="selected"><a href="./brand.html">브랜드 이야기</a></div>                        
+                        <div><a href="">약국찾기</a></div>                        
+                    </div>
+                </div>
+            </div>         
+        </section>
+        <section class="brand_box">
+            <h2 class="brandTT hidden">브랜드 이야기</h2>
+            <div class="modal_wrap">
+                <div class="modal one hidden">
+                    <div class="modal_close">
+                        <span class="material-icons-outlined">close</span>
+                    </div>
+                    <div class="modal_box">
+                        <div class="modal_title">
+                            <h3 class="modal_tt">삐콤씨</h3>
+                            <a href="">제품정보</a>
+                        </div>
+                        <h4>국민영양제 삐콤씨</h4>
+                        <div class="modal_img"></div>
+                        <div class="modal_txt">
+                            <p>서민들의 비상상비약으로 사랑받아온 안티푸라민은 알루미늄 통에 수줍게 웃고 있는 간호사 그림만큼 정겨운 제품입니다. 안티푸라민은 1933년 유한양행 창업자 유일한 박사의 부인인 의사출신 호미리 여사의 도움으로 유한양행이 자체 개발한 의약품 1호입니다. 
+                            <br> 그 브랜드 이름은 반대라는 이름의 안티(무시)에 ‘불태우다, 염증을 일으키다’는 뜻의 인플레임(inflame)을 합친 말로 과장없이 ‘항염증제’, ‘진통소염제’라는 제품 특성을 설명한 브랜드 이름입니다. 안티푸라민은 멘톨, 캄파 등으로 소염진통작용, 혈관확장작용, 가려움증 개선작용 등을 나타내고 바세린 성분으로 보습효과도 보입니다. 1933년 연고형태에서 출시되어 1999년에는 로션형태로,  2010년에는 파프제품을 선보이며 고객에게 다가가고 있습니다.  현재는 연고, S로션, 5종의 파프와 쿨에어파스까지 선보이며 명실상부한 안티푸라민 패밀리’를 구성하고 있습니다.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal two hidden">
+                    <div class="modal_close">
+                        <span class="material-icons-outlined">close</span>
+                    </div>
+                    <div class="modal_box">
+                        <div class="modal_title">                            
+                            <h3 class="modal_tt">안티푸라민</h3>
+                             <a href="">제품정보</a>
+                        </div>
+                        <h4>가정상비약 안티푸라민</h4>
+                        <div class="modal_img"></div>
+                        <div class="modal_txt">
+                            <p>서민들의 비상상비약으로 사랑받아온 안티푸라민은 알루미늄 통에 수줍게 웃고 있는 간호사 그림만큼 정겨운 제품입니다. 안티푸라민은 1933년 유한양행 창업자 유일한 박사의 부인인 의사출신 호미리 여사의 도움으로 유한양행이 자체 개발한 의약품 1호입니다. 
+                            <br> 그 브랜드 이름은 반대라는 이름의 안티(무시)에 ‘불태우다, 염증을 일으키다’는 뜻의 인플레임(inflame)을 합친 말로 과장없이 ‘항염증제’, ‘진통소염제’라는 제품 특성을 설명한 브랜드 이름입니다. 안티푸라민은 멘톨, 캄파 등으로 소염진통작용, 혈관확장작용, 가려움증 개선작용 등을 나타내고 바세린 성분으로 보습효과도 보입니다. 1933년 연고형태에서 출시되어 1999년에는 로션형태로,  2010년에는 파프제품을 선보이며 고객에게 다가가고 있습니다.  현재는 연고, S로션, 5종의 파프와 쿨에어파스까지 선보이며 명실상부한 안티푸라민 패밀리’를 구성하고 있습니다.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal three hidden">
+                    <div class="modal_close">
+                        <span class="material-icons-outlined">close</span>
+                    </div>
+                    <div class="modal_box">
+                        <div class="modal_title">                            
+                            <h3 class="modal_tt">비타민 씨 1000</h3>
+                             <a href="">제품정보</a>
+                        </div>
+                        <h4>고함량 비타민<em class="eng">C</em>제품</h4>
+                        <div class="modal_img"></div>
+                        <div class="modal_txt">
+                            <p>서민들의 비상상비약으로 사랑받아온 안티푸라민은 알루미늄 통에 수줍게 웃고 있는 간호사 그림만큼 정겨운 제품입니다. 안티푸라민은 1933년 유한양행 창업자 유일한 박사의 부인인 의사출신 호미리 여사의 도움으로 유한양행이 자체 개발한 의약품 1호입니다. 
+                            <br> 그 브랜드 이름은 반대라는 이름의 안티(무시)에 ‘불태우다, 염증을 일으키다’는 뜻의 인플레임(inflame)을 합친 말로 과장없이 ‘항염증제’, ‘진통소염제’라는 제품 특성을 설명한 브랜드 이름입니다. 안티푸라민은 멘톨, 캄파 등으로 소염진통작용, 혈관확장작용, 가려움증 개선작용 등을 나타내고 바세린 성분으로 보습효과도 보입니다. 1933년 연고형태에서 출시되어 1999년에는 로션형태로,  2010년에는 파프제품을 선보이며 고객에게 다가가고 있습니다.  현재는 연고, S로션, 5종의 파프와 쿨에어파스까지 선보이며 명실상부한 안티푸라민 패밀리’를 구성하고 있습니다.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal four hidden">
+                    <div class="modal_close">
+                        <span class="material-icons-outlined">close</span>
+                    </div>
+                    <div class="modal_box">
+                        <div class="modal_title">                            
+                            <h3 class="modal_tt">유한락스</h3>
+                             <a href="">제품정보</a>
+                        </div>
+                        <h4>효과적인 소독</h4>
+                        <div class="modal_img"></div>
+                        <div class="modal_txt">
+                            <p>서민들의 비상상비약으로 사랑받아온 안티푸라민은 알루미늄 통에 수줍게 웃고 있는 간호사 그림만큼 정겨운 제품입니다. 안티푸라민은 1933년 유한양행 창업자 유일한 박사의 부인인 의사출신 호미리 여사의 도움으로 유한양행이 자체 개발한 의약품 1호입니다. 
+                            <br> 그 브랜드 이름은 반대라는 이름의 안티(무시)에 ‘불태우다, 염증을 일으키다’는 뜻의 인플레임(inflame)을 합친 말로 과장없이 ‘항염증제’, ‘진통소염제’라는 제품 특성을 설명한 브랜드 이름입니다. 안티푸라민은 멘톨, 캄파 등으로 소염진통작용, 혈관확장작용, 가려움증 개선작용 등을 나타내고 바세린 성분으로 보습효과도 보입니다. 1933년 연고형태에서 출시되어 1999년에는 로션형태로,  2010년에는 파프제품을 선보이며 고객에게 다가가고 있습니다.  현재는 연고, S로션, 5종의 파프와 쿨에어파스까지 선보이며 명실상부한 안티푸라민 패밀리’를 구성하고 있습니다.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal five hidden">
+                    <div class="modal_close">
+                        <span class="material-icons-outlined">close</span>
+                    </div>
+                    <div class="modal_box">
+                        <div class="modal_title">                            
+                            <h3 class="modal_tt">암앤해머</h3>
+                             <a href="">제품정보</a>
+                        </div>
+                        <h4>환경친화 브랜드</h4>
+                        <div class="modal_img"></div>
+                        <div class="modal_txt">
+                            <p>서민들의 비상상비약으로 사랑받아온 안티푸라민은 알루미늄 통에 수줍게 웃고 있는 간호사 그림만큼 정겨운 제품입니다. 안티푸라민은 1933년 유한양행 창업자 유일한 박사의 부인인 의사출신 호미리 여사의 도움으로 유한양행이 자체 개발한 의약품 1호입니다. 
+                            <br> 그 브랜드 이름은 반대라는 이름의 안티(무시)에 ‘불태우다, 염증을 일으키다’는 뜻의 인플레임(inflame)을 합친 말로 과장없이 ‘항염증제’, ‘진통소염제’라는 제품 특성을 설명한 브랜드 이름입니다. 안티푸라민은 멘톨, 캄파 등으로 소염진통작용, 혈관확장작용, 가려움증 개선작용 등을 나타내고 바세린 성분으로 보습효과도 보입니다. 1933년 연고형태에서 출시되어 1999년에는 로션형태로,  2010년에는 파프제품을 선보이며 고객에게 다가가고 있습니다.  현재는 연고, S로션, 5종의 파프와 쿨에어파스까지 선보이며 명실상부한 안티푸라민 패밀리’를 구성하고 있습니다.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal six hidden">
+                    <div class="modal_close">
+                        <span class="material-icons-outlined">close</span>
+                    </div>
+                    <div class="modal_box">
+                        <div class="modal_title">                            
+                            <h3 class="modal_tt">유한덴탈케어</h3>
+                             <a href="">제품정보</a>
+                        </div>
+                        <h4>내 이에 딱 맞는 칫솔</h4>
+                        <div class="modal_img"></div>
+                        <div class="modal_txt">
+                            <p>서민들의 비상상비약으로 사랑받아온 안티푸라민은 알루미늄 통에 수줍게 웃고 있는 간호사 그림만큼 정겨운 제품입니다. 안티푸라민은 1933년 유한양행 창업자 유일한 박사의 부인인 의사출신 호미리 여사의 도움으로 유한양행이 자체 개발한 의약품 1호입니다. 
+                            <br> 그 브랜드 이름은 반대라는 이름의 안티(무시)에 ‘불태우다, 염증을 일으키다’는 뜻의 인플레임(inflame)을 합친 말로 과장없이 ‘항염증제’, ‘진통소염제’라는 제품 특성을 설명한 브랜드 이름입니다. 안티푸라민은 멘톨, 캄파 등으로 소염진통작용, 혈관확장작용, 가려움증 개선작용 등을 나타내고 바세린 성분으로 보습효과도 보입니다. 1933년 연고형태에서 출시되어 1999년에는 로션형태로,  2010년에는 파프제품을 선보이며 고객에게 다가가고 있습니다.  현재는 연고, S로션, 5종의 파프와 쿨에어파스까지 선보이며 명실상부한 안티푸라민 패밀리’를 구성하고 있습니다.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal seven hidden">
+                    <div class="modal_close">
+                        <span class="material-icons-outlined">close</span>
+                    </div>
+                    <div class="modal_box">
+                        <div class="modal_title">                            
+                            <h3 class="modal_tt">아름다운 세제</h3>
+                             <a href="">제품정보</a>
+                        </div>
+                        <h4>친환경인증</h4>
+                        <div class="modal_img"></div>
+                        <div class="modal_txt">
+                            <p>서민들의 비상상비약으로 사랑받아온 안티푸라민은 알루미늄 통에 수줍게 웃고 있는 간호사 그림만큼 정겨운 제품입니다. 안티푸라민은 1933년 유한양행 창업자 유일한 박사의 부인인 의사출신 호미리 여사의 도움으로 유한양행이 자체 개발한 의약품 1호입니다. 
+                            <br> 그 브랜드 이름은 반대라는 이름의 안티(무시)에 ‘불태우다, 염증을 일으키다’는 뜻의 인플레임(inflame)을 합친 말로 과장없이 ‘항염증제’, ‘진통소염제’라는 제품 특성을 설명한 브랜드 이름입니다. 안티푸라민은 멘톨, 캄파 등으로 소염진통작용, 혈관확장작용, 가려움증 개선작용 등을 나타내고 바세린 성분으로 보습효과도 보입니다. 1933년 연고형태에서 출시되어 1999년에는 로션형태로,  2010년에는 파프제품을 선보이며 고객에게 다가가고 있습니다.  현재는 연고, S로션, 5종의 파프와 쿨에어파스까지 선보이며 명실상부한 안티푸라민 패밀리’를 구성하고 있습니다.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal eight hidden">
+                    <div class="modal_close">
+                        <span class="material-icons-outlined">close</span>
+                    </div>
+                    <div class="modal_box">
+                        <div class="modal_title">                            
+                            <h3 class="modal_tt">웰니스</h3>
+                             <a href="">제품정보</a>
+                        </div>
+                        <h4>반려동물의 고품격 사료</h4>
+                        <div class="modal_img"></div>
+                        <div class="modal_txt">
+                            <p>서민들의 비상상비약으로 사랑받아온 안티푸라민은 알루미늄 통에 수줍게 웃고 있는 간호사 그림만큼 정겨운 제품입니다. 안티푸라민은 1933년 유한양행 창업자 유일한 박사의 부인인 의사출신 호미리 여사의 도움으로 유한양행이 자체 개발한 의약품 1호입니다. 
+                            <br> 그 브랜드 이름은 반대라는 이름의 안티(무시)에 ‘불태우다, 염증을 일으키다’는 뜻의 인플레임(inflame)을 합친 말로 과장없이 ‘항염증제’, ‘진통소염제’라는 제품 특성을 설명한 브랜드 이름입니다. 안티푸라민은 멘톨, 캄파 등으로 소염진통작용, 혈관확장작용, 가려움증 개선작용 등을 나타내고 바세린 성분으로 보습효과도 보입니다. 1933년 연고형태에서 출시되어 1999년에는 로션형태로,  2010년에는 파프제품을 선보이며 고객에게 다가가고 있습니다.  현재는 연고, S로션, 5종의 파프와 쿨에어파스까지 선보이며 명실상부한 안티푸라민 패밀리’를 구성하고 있습니다.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal nine hidden">
+                    <div class="modal_close">
+                        <span class="material-icons-outlined">close</span>
+                    </div>
+                    <div class="modal_box">
+                        <div class="modal_title">                            
+                            <h3 class="modal_tt">뉴오리진</h3>
+                             <a href="">제품정보</a>
+                        </div>
+                        <h4>헬스&amp;라이프스타일</h4>
+                        <div class="modal_img"></div>
+                        <div class="modal_txt">
+                            <p>서민들의 비상상비약으로 사랑받아온 안티푸라민은 알루미늄 통에 수줍게 웃고 있는 간호사 그림만큼 정겨운 제품입니다. 안티푸라민은 1933년 유한양행 창업자 유일한 박사의 부인인 의사출신 호미리 여사의 도움으로 유한양행이 자체 개발한 의약품 1호입니다. 
+                            <br> 그 브랜드 이름은 반대라는 이름의 안티(무시)에 ‘불태우다, 염증을 일으키다’는 뜻의 인플레임(inflame)을 합친 말로 과장없이 ‘항염증제’, ‘진통소염제’라는 제품 특성을 설명한 브랜드 이름입니다. 안티푸라민은 멘톨, 캄파 등으로 소염진통작용, 혈관확장작용, 가려움증 개선작용 등을 나타내고 바세린 성분으로 보습효과도 보입니다. 1933년 연고형태에서 출시되어 1999년에는 로션형태로,  2010년에는 파프제품을 선보이며 고객에게 다가가고 있습니다.  현재는 연고, S로션, 5종의 파프와 쿨에어파스까지 선보이며 명실상부한 안티푸라민 패밀리’를 구성하고 있습니다.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal ten hidden">
+                    <div class="modal_close">
+                        <span class="material-icons-outlined">close</span>
+                    </div>
+                    <div class="modal_box">
+                        <div class="modal_title">                            
+                            <h3 class="modal_tt">엘레나</h3>
+                             <a href="">제품정보</a>
+                        </div>                        
+                        <div class="modal_img">
+                            <h4>프리미엄 멀티 유산균</h4>
+                        </div>
+                        <div class="modal_txt">
+                            <p>서민들의 비상상비약으로 사랑받아온 안티푸라민은 알루미늄 통에 수줍게 웃고 있는 간호사 그림만큼 정겨운 제품입니다. 안티푸라민은 1933년 유한양행 창업자 유일한 박사의 부인인 의사출신 호미리 여사의 도움으로 유한양행이 자체 개발한 의약품 1호입니다. 
+                            <br> 그 브랜드 이름은 반대라는 이름의 안티(무시)에 ‘불태우다, 염증을 일으키다’는 뜻의 인플레임(inflame)을 합친 말로 과장없이 ‘항염증제’, ‘진통소염제’라는 제품 특성을 설명한 브랜드 이름입니다. 안티푸라민은 멘톨, 캄파 등으로 소염진통작용, 혈관확장작용, 가려움증 개선작용 등을 나타내고 바세린 성분으로 보습효과도 보입니다. 1933년 연고형태에서 출시되어 1999년에는 로션형태로,  2010년에는 파프제품을 선보이며 고객에게 다가가고 있습니다.  현재는 연고, S로션, 5종의 파프와 쿨에어파스까지 선보이며 명실상부한 안티푸라민 패밀리’를 구성하고 있습니다.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal_box_bg"></div>
+            </div>
+            <div class="container">
+                <div class="brand bcomec">
+                    <div class="txt_box">
+                        <p>온가족 건강관리</p>
+                        <h3>국민영양제 삐콤씨</h3>
+                    </div>
+                </div>
+                <div class="brand antiphlamine">
+                    <div class="txt_box">
+                        <p>가정상비약</p>
+                        <h3>안티푸라민</h3>
+                    </div>
+                </div>
+                <div class="brand vitaminc">
+                    <div class="txt_box">
+                        <p>고함량 비타민<em class="eng">C</em>제품</p>
+                        <h3>비타민 씨 1000<em class="eng">mg</em></h3>
+                    </div>
+                </div>
+                <div class="brand rox">
+                    <div class="txt_box">
+                        <p>효과적인 소독</p>
+                        <h3>유한락스</h3>
+                    </div>
+                </div>
+                <div class="brand hammer">
+                    <div class="txt_box">
+                        <p>환경친화 브랜드</p>
+                        <h3>암앤해머</h3>
+                    </div>
+                </div>
+                <div class="brand dental">
+                    <div class="txt_box">
+                        <p>내 이에 딱 맞는 칫솔</p>
+                        <h3>유한덴탈케어</h3>
+                    </div>
+                </div>
+                <div class="brand bol">
+                    <div class="txt_box">
+                        <p>친환경인증</p>
+                        <h3>아름다운 세제</h3>
+                    </div>
+                </div>
+                <div class="brand wellness">
+                    <div class="txt_box">
+                        <p>반려동물의 고품격 사료</p>
+                        <h3>웰니스</h3>
+                    </div>
+                </div>
+                <div class="brand neworigin">
+                    <div class="txt_box">
+                        <p>헬스&amp;라이프스타일</p>
+                        <h3>뉴오리진</h3>
+                    </div>
+                </div>                
+                <div class="brand elena">
+                    <div class="txt_box">
+                        <p>프리미엄 멀티 유산균</p>
+                        <h3>엘레나</h3>
+                    </div>
+                </div>                
+            </div>
+        </section>    
+       
+    </main>
+    <footer>
+        <div class="container">
+            <div class="second_floor">
+                <div class="site_box">
+                    <ul class="site">
+                        <li><a href="">사이트이용약관</a></li>
+                        <li><a href="">개인정보처리방침</a></li>
+                        <li><a href="">영상정보처리기기 운영관리 방침</a></li>
+                        <li><a href="">이메일무단수집거부</a></li>
+                        <li><a href="">스팸정책</a></li>
+                        <li><a href="">법적고지</a></li>
+                        <li><a href="">사이트이용 도움말</a></li>
+                    </ul>
+                </div>
+                <div class="FB_box">
+                    <div class="family_box">
+                        <ul class="family_main">
+                            <li class="st"><p class="emphasis">Family Site</p><span class="material-icons-sharp">expand_more</span>
+                                <ul class="family">
+                                    <li><a href="">삐콤씨</a></li>
+                                    <li><a href="">센스데이</a></li>
+                                    <li><a href="">지르텍</a></li>
+                                    <li><a href="">유한킴벌리</a></li>
+                                    <li><a href="">유한크로락스</a></li>
+                                    <li><a href="">유한메디카</a></li>                            
+                                </ul>  
+                            </li>
+                        </ul>                                                    
+                    </div>                    
+                    <div class="gotop" data-menuanchor="page1">
+                        <a href="" class="indent">to page top</a>
+                        <span class="material-icons-sharp">arrow_drop_up</span>
+                        <p>top</p>                                   
+                    </div>    
+                </div>                                                        
+            </div>
+            <div class="first_floor cf">
+                <h1>yuhan logo</h1>
+                <div class="txt">
+                    <ul class="cf">
+                        <li>서울시 동작구 노량진로 74 </li>
+                        <li>문의전화 : 02)828-0181</li>
+                        <li>FAX : 02)828-0050</li>
+                        <li>대표자 : 조욱제</li>
+                        <li>사업자등록번호 : 118-81-00601</li>
+                    </ul>
+                    <p>Copyright &copy; YUHAN. All right reserved.</p>                
+                </div>
+            </div>
+        </div>  
+        <hr>          
+    </footer>       
+    <script>
+        $('.brand').each(function(i){
+            $(this).mouseenter(function(){
+                $(this).addClass('active');
+                $(this).find('.txt_box').stop().fadeIn(300);
+            }).mouseleave(function(){
+                $(this).removeClass('active');
+                $(this).find('.txt_box').hide();
+            }).click(function(){
+                $('.modal_box_bg').fadeIn(300);                
+                $('.modal').eq(i).fadeIn(300);
+            })
+        });
+        $('.modal_box_bg').add('.modal_close').click(function(){
+            $('.modal_box_bg').fadeOut(300);
+            $('.modal').fadeOut(300);
+        })
+    </script>
+</body>
+</html>

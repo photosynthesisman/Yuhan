@@ -1,0 +1,182 @@
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;    
+}
+.mobileBr {
+    display: none;
+}
+.main_banner { 
+    width: auto;  
+    height: 127rem;    
+}
+.main_banner:after{
+    display: none;   
+}
+.main_banner > .main_tt {
+    top: 21.8rem;
+}
+.prey_video {    
+    width: 100%;
+    max-width: 120rem;
+    margin: 0 auto;   
+    padding-top: 40rem; 
+    
+}   
+.video_container {
+    position: relative;    
+    height: auto;
+    padding-top: 56.25%;
+}   
+#vid {
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+.quotation {
+    position: relative;    
+    color: #fff;    
+    padding-bottom: 75rem;
+}
+.quotation .quotation_tt {
+    letter-spacing: -0.1rem;
+    line-height: 4.2rem;
+}
+.quotation em {
+    font-weight: 500;
+}
+.first_quotation {
+    padding: 10rem 0 18rem;    
+}
+.quotation .first_quotation p {
+    text-align: center;  
+    line-height: 6rem;
+}
+.second_quotation {
+    position: relative;
+    height: 114.2rem;
+    margin-bottom: 20rem;
+}
+.second_quotation.container {
+    width: 100rem;    
+}
+.second_quotation .second_floor, .second_quotation .first_floor {
+    position: absolute;
+    left: 0;
+    right: 0;   
+}
+.second_quotation .second_floor {
+    top: 0;        
+}
+.second_quotation .first_floor {
+    bottom: 0;        
+}
+.second_quotation .second_floor .top_txtBox{
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+}
+.second_quotation .first_floor .bottom_txtBox {
+    text-align: right;
+    position: absolute;
+    bottom: 0;
+    left: 5rem;
+}
+.second_quotation .Limg_box {
+    width: 42.4rem;
+    height: 60rem;
+    background: url(../images/yuilhan1.jpg) 100% center no-repeat;
+}
+.second_quotation .Rimg_box {
+    margin-left: calc(100% - 42.4rem);
+    width: 42.4rem;
+    height: 60rem;
+    background: url(../images/yuilhan2.jpg) 35% center no-repeat;
+}
+.third_quotation.container {
+    width: 135rem;
+    height: 55.5rem;
+    margin-bottom: 20rem;
+    position: relative;
+}
+.third_quotation > div {
+    position: absolute;
+}
+.third_quotation .Limg_box {
+    width: 60rem;
+    height: 37rem;
+    background: url(../images/yuilhan3.jpg) center center no-repeat;
+}
+.third_quotation .Rimg_box {
+    bottom: 0;
+    right: 0;
+    width: 60rem;
+    height: 37rem;
+    background: url(../images/yuilhan4.jpg) center center no-repeat;
+}
+.third_quotation .txtBox {
+    margin-left: 17.6rem;
+    bottom: 0;
+}
+.third_quotation .quotation_tt.point {
+    color: #666;
+}
+.quad_quotation {
+    text-align: center;
+}
+.quad_quotation .img_box {
+    margin: 0 auto 10.8rem;
+    width: 70rem;
+    height: 50rem;
+    background: url(../images/yuilhan5.jpg) 100% center no-repeat;
+}
+.quad_quotation p {
+    font-size: 4.8rem;
+    line-height: 6.4rem;
+    font-weight: 200;
+    margin-bottom: 5rem;
+    text-shadow: 0.4rem 0 1rem rgba(34, 34, 34, .6);
+}
+.quad_quotation .txtBox strong {
+    font-weight: 500;    
+}
+.quad_quotation .txtBox small {
+    font-style: italic;
+    font-weight: 300;
+    text-shadow: 0 0 1rem rgba(22, 22, 22, .8);    
+}
+.quotation .back {
+    z-index: -1;
+    position: fixed;
+    top: 0; right: 0; bottom: 0; left: 0; 
+    visibility: hidden;
+    opacity: 0;
+    transition:all 750ms ease;
+}
+.quotation .back.active {
+    visibility: visible;
+    opacity: 1;
+    transition:all 1000ms ease-out; 
+}
+.quotation .first_bg {
+    background: url(../images/background_1.jpg) center 50% no-repeat;       
+}
+.quotation .second_bg {   
+    position: absolute; 
+    background: url(../images/background_2.jpg) center / cover no-repeat;    
+}
+.quotation .last_bg {        
+    background: url(../images/background_3.jpg) center 70% no-repeat;   
+    filter: grayscale(100%);       
+}
+.quotation .last_bg::after{
+    content: '';
+    position: absolute;
+    left: 0; top: 0; right: 0; bottom: 0;
+    background: rgba(22, 22, 22, .5);
+}
+
+

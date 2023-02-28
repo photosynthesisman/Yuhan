@@ -1,0 +1,766 @@
+@import url('normalize.css');
+@import url('reset.css');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+/* -------------------- 레이아웃 -------------------- */
+.container {
+    width: 120rem;
+    margin: 0 auto;
+}
+.hidden {
+    display: none;
+}
+.flex {
+    display: flex;
+}
+.jcsb {
+    justify-content: space-between;    
+}
+.aic {
+    align-items: center;
+}
+.indent {
+    text-indent: -9999rem;
+}
+/* -------------------- 폰트위계 -------------------- */
+/* font-family: 'Roboto', sans-serif; */
+/* font-family: 'Noto Sans KR', sans-serif; */
+body{
+    font:1.6rem/2.7rem 'Noto Sans KR', sans-serif;    
+    font-weight: 300;
+    color: #222;    
+}
+h1,h2,h3,h4,h5,h6{
+    line-height: 1;
+}
+.eng {
+    font-family: 'Roboto', sans-serif;
+}
+.main_slogan {
+    font-size: 6rem;
+    line-height: 7rem;
+    font-weight: 500;    
+}
+.main_tt {
+    font-size: 4.8rem;
+    font-weight: 700;
+}
+.sub_tt {
+    font-size: 4rem;
+    font-weight: 500;
+}
+.con_head_tt {
+    font-size: 2.8rem;
+    font-weight: 500;
+}
+.quotation_tt {
+    font-size: 3.2rem;
+    line-height: 4.8rem;
+    font-weight: 200;
+}
+.con_sub {
+    font-size: 2.4rem;
+    font-weight: 400;
+}
+.con_subOfsub {
+    font-size: 2rem;
+    font-weight: 400;
+}
+.strong {
+    font-size: 1.8rem;
+    font-weight: 300;
+}
+.emphasis{
+    font-weight: 400;
+}
+em {
+    font-weight: 400;
+}
+html {
+    font-size: 62.5%;
+}
+/* -------------------- 컬러 -------------------- */
+.HL_bg {
+    background: #009639;
+}
+/* rgba(0,150,57,.5) */
+.HL_tt {
+    color: #009639;
+}
+.PT_tt {
+    color: #cf9437;
+}
+
+
+/* -------------------- header -------------------- */
+
+header {
+    position: fixed;
+    z-index: 50;
+    width: 100vw;
+}
+.header_wrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 6rem;
+    padding-right: 6rem;
+    height: 8.1rem;
+    border-bottom: 0.1rem solid white;          
+}
+.header_wrap .logo a{
+    background: url(../images/yuhan_logo_white.png) no-repeat;    
+    background-size: 100%;
+    display: block;
+    text-indent: -9999em;
+    width: 17.1rem;
+    height: 4rem;
+}
+.header_wrap a {   
+    color: white;      
+}
+.header_wrap nav {
+    position: relative;
+}
+.header_wrap nav .mainMenu {
+    display: flex;    
+}
+.header_wrap nav .mainMenu li .con_subOfsub {
+    display: inline-block;
+    line-height: 8.1rem;    
+    padding: 0 5rem;   
+    position: relative;
+    z-index: 100;
+    transition: color 0.5s;
+}
+.header_wrap nav .mainMenu li.active .con_subOfsub {
+    color: #009639;
+}
+.header_wrap nav .mainMenu li .con_subOfsub::before {
+    content: '';
+    position: absolute;
+    bottom: -0.1rem;
+    left: 0;
+    z-index: 10;
+    right: 0;
+    height: 0.25rem;
+    width: 0;
+    background: #009639;
+    transition: 0.3s;
+}
+.header_wrap nav .mainMenu li.active .con_subOfsub::before {   
+    width: 100%;
+}
+
+.header_wrap nav .mainMenu li:nth-child(1):hover ul, .header_wrap nav .mainMenu li:nth-child(2):hover ul, .header_wrap nav .mainMenu li:nth-child(3):hover ul, .header_wrap nav .mainMenu li:nth-child(4):hover ul, .header_wrap nav .mainMenu li:nth-child(5):hover ul, .header_wrap nav .mainMenu li:nth-child(6):hover ul{
+    opacity: 1;
+    visibility:visible;
+}
+.subMenu {      
+    opacity: 0;  
+    visibility: hidden;
+    display: flex;    
+    justify-content: center;
+    position: absolute;
+    gap: 2.1rem;    
+    top: 100%;
+    left: 0;
+    right: 0;    
+    height: 100%;
+}    
+.subMenu a {
+    font-size: 1.8rem;
+    display: block;    
+    padding: 2.1rem;
+    color: #fff !important;        
+}
+.subMenu a:hover {
+    color: #009639 !important;    
+}
+.sub_bg {
+    display: none;
+    position: absolute;
+    top: 100%;
+    background: rgba(22,22,22,.5);
+    width: 100%;
+    height: 7rem;
+}
+.header_wrap .recruit_lang{
+    display: flex;
+    gap: 1rem;
+}
+.header_wrap .recruit_lang li {
+    padding: 0 1rem;
+}
+.header_wrap .recruit_lang li:first-child {
+    padding-left: 0;
+}
+.header_wrap .recruit_lang li:last-child {
+    padding-right: 0;
+}
+.header_wrap .recruit_lang span {    
+    cursor: pointer;
+    font-size: 3.2rem;
+    line-height: 2.7rem;
+    vertical-align: bottom;
+    color: #fff;
+}
+.header_wrap .recruit_lang .lnag_kor {
+    position: relative;
+    cursor: pointer;
+}
+.header_wrap .recruit_lang .lnag_kor.active .lang {
+    display: block;
+}
+.header_wrap .recruit_lang .lnag_kor a:last-child {
+    position: absolute;
+    top: 100%;
+    padding-left: 1rem;
+    background-color: rgb(34,34,34,.5);
+    color: #fff;
+    left: 0;
+    right: 0;
+}
+.header_wrap .recruit_lang .lnag_kor span{
+    font-size: 2.6rem;
+    transition: transform .5s;
+}
+.header_wrap.fixed {   
+    background:#fff;    
+    box-shadow: 0px 0.15rem 0.2rem 0px rgba(222,222,222,.5); 
+}
+.fixed .recruit_lang span {
+    color: #222;
+}
+.fixed a {
+    color:#222;
+}
+.fixed .recruit_lang li:last-child a span{
+    background-color:#222;
+}
+.fixed .recruit_lang li:nth-child(2) a:after{
+    border-color: #222 transparent transparent #222;
+}
+.fixed .logo a{
+    background-image: url(../images/yuhan_logo_color.png);
+}
+/* -------------------- footer -------------------- */
+
+Footer {    
+    box-sizing: border-box;
+    background: #333;
+    position: relative;    
+}
+Footer hr {
+    padding: 0;
+    margin: 0;
+    border-color: #fff transparent transparent transparent;
+    position: absolute;
+    top: 11rem;
+    width: 100%;
+}
+Footer .second_floor {
+    padding-top: 4.4rem;
+    width: 100%;
+    position: relative;    
+}
+Footer .site_box .site{
+    display: flex;
+}
+Footer .site_box .site a {
+    padding: 0 1.2rem;
+    display: inline-block;
+    border-right: 0.1rem solid #fff;
+    line-height: 1.6rem;
+    color: #fff;
+    letter-spacing: -0.025em;
+    font-size: 1.4rem;
+}
+Footer .site_box .site li:last-child a {
+    border: none;
+}
+Footer .site_box .site li:first-child a {
+    padding-left: 0;
+}
+Footer .family_box {       
+    position: absolute;
+    top: 3rem;
+    right: 7rem;    
+    width: 18rem;
+    height: 5rem;
+    background: #222;     
+}
+Footer .family_box:hover {
+    background: #111;
+}
+Footer .family_box .st {    
+    cursor: pointer;       
+}
+Footer .family_box .st p.emphasis {
+    line-height: 5rem;
+    margin-left: 2rem;
+}
+Footer .family_box.active .family {
+    visibility: visible;    
+}
+Footer .family_box.active .family_main span {        
+    transform: translateY(-50%) rotate(180deg);    
+}
+Footer .family_box .family {
+    position: absolute;
+    bottom: 100%;      
+    visibility: hidden;    
+}
+Footer .family_box .family a{
+    display: inline-block;
+    width: 18rem;
+    height: 4rem;
+    background: #444;
+    line-height: 4rem;    
+    padding-left: 2rem;
+    box-sizing: border-box;
+    border-bottom: 0.1rem solid #222;    
+}
+Footer .family_box .family a:hover {
+    background: #333;
+}
+Footer .family_box .family_main span {
+    position: absolute;
+    color: #fff;
+    top: 50%;
+    right: 2rem;           
+    transform: translateY(-50%);        
+}
+
+Footer .second_floor .gotop {
+    cursor: pointer;
+    position: absolute;
+    top: 3rem;
+    right: 0;
+    display: inline-block;
+    width: 5rem;
+    height: 5rem;
+    background: #5a5a5a;
+    color: #fff;    
+}
+Footer .second_floor .gotop:hover {
+    background-color: rgb(34,34,34);
+}
+Footer .second_floor .gotop a {
+    position: absolute;
+    left: 0; top: 0; right: 0; bottom: 0;
+}
+Footer .second_floor .gotop span {
+    position: absolute;
+    left: 50%;
+    top: 0.5rem;
+    transform: translateX(-50%);    
+}
+Footer .second_floor .gotop p {
+    position: absolute;
+    bottom: 1rem;
+    left: 50%;
+    transform: translateX(-50%);
+    text-transform: uppercase;
+    font-weight: 400;
+    line-height: 1;
+}
+Footer .family_box a, Footer .family_box p {
+    color: #fff;
+}
+Footer .first_floor {
+    color: #c8c8c8;
+    padding-top: 8.6rem;        
+}
+Footer .container {
+    height: 29.2rem;
+}
+Footer .first_floor h1{
+    float: left;    
+    background: url(../images/yuhan_logo_white.png) no-repeat;
+    background-size: 100%;
+    width: 23.3rem;
+    height: 5.5rem;
+    opacity: .5;
+    margin-right: 2.7rem;
+    text-indent: -9999rem;
+}
+Footer .first_floor ul, Footer .first_floor p {   
+    font-size: 1.4rem;         
+    float: left;
+}
+Footer .first_floor p {
+    line-height: 1;
+    margin-top: 1rem;
+}
+Footer .first_floor ul li {
+    margin-top: 0.5rem;
+    padding: 0 1.2rem;
+    float: left;
+    line-height: 1.6rem;
+    border-right: 0.1rem solid #c8c8c8;
+}
+Footer .first_floor ul li:last-child {
+    border:none
+}
+Footer .first_floor ul li:first-child {
+    padding-left: 0;
+}
+/* -------------------- side Menu -------------------- */
+
+.side_nav {
+    position: fixed;
+    left: 0; top: 0; right: 0; bottom: 0;
+    background-color: rgba(22,22,22,.5);
+    z-index: 99;
+    display: none;
+}
+.side_box {
+    position: fixed;    
+    height: 100%;    
+    top: 0;    
+    width: 70%;
+    right: -100vw;    
+    background-color: #fff;
+    z-index: 100;
+    transition: right 1s;
+}
+.side_box .logo_box {
+    position: relative;
+}
+.side_box .side_logo {
+    width: 100%;    
+    text-align: center;
+    padding: 2.5rem;
+    box-sizing: border-box;
+}
+.side_box .side_logo a {
+    display: inline-block;
+    width: 71px;
+    height: 71px;
+    background: url(../images/sprite_image.png) no-repeat;
+    background-position: -362px -1px;     
+    text-indent: -9999rem;   
+}
+.side_box .close {
+    cursor: pointer;
+    position: absolute;
+    color: #666;
+    font-size: 3rem;
+    right: 2rem;
+    top: 50%;
+    transform: translateY(-50%) rotate(45deg);    
+}
+.side_box .sideMenu li {
+    line-height: 6rem;   
+    font-size: 2rem; 
+}
+.side_box .sideMenu li span {
+    float: right; 
+    font-size: 3rem; 
+    margin-right: 2rem;
+    line-height: 6rem;
+    color: #666;  
+    transition: transform 0.5s;  
+}
+.side_box .sideMenu a {
+    display: inline-block;
+    box-sizing: border-box;
+    width: 100%;
+    height: 100%;
+    color: #666;    
+}
+.side_box .sideMenu > li {    
+    border-top: 1px solid #dfdfdf;    
+}
+.side_box .sideMenu > li > a.active{
+    background-color: #009639;
+    color: #fff;        
+}
+.side_box .sideMenu > li a.active span {
+    color: #fff;
+    transform: rotate(45deg);
+}
+.side_box .sideMenu > li > a {    
+    font-weight: 500;
+    padding-left: 2rem;
+}
+.side_box .sideMenu ul {    
+    display: none;
+}
+.side_box .sideMenu ul li {
+    background: #dfdfdf;  
+}    
+.side_box .sideMenu ul li a {
+    padding-left: 3rem;    
+    font-weight: 400;
+}
+.side_sub {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+.side_sub_flex {
+    display: flex;
+}
+.side_sub div {        
+    height: 4rem;
+    line-height: 4rem;
+    text-align: center;
+    background-color: rgba(178, 178, 178, 0.9);    
+    font-weight: 400;
+}
+.side_sub div a {
+    display: inline-block;
+    color: #fff;
+    width: 80%;
+    height: 100%;
+}
+.side_sub div.side_recurit{        
+    width: 50%;
+}
+.side_sub div.side_lang {
+    position: relative;
+    width: 50%;
+}
+.side_sub div.side_lang span {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+/* -------------------- subpage navigation bar -------------------- */
+.sp_nav_bar {
+    height: 6rem;
+    background-color: #fff;
+    box-shadow: 0 1px 2px rgba(102,102,102,.3);
+    position: relative;
+    z-index: 10;
+}
+.sp_nav_bar .container {
+    display: flex;
+    align-items: center;    
+    justify-content: left;
+}
+.sp_nav_bar .container .HL_bg {
+    position: relative;
+    width: 6rem;
+    height: 6rem;    
+    cursor: pointer;   
+}
+.sp_nav_bar .container .HL_bg a {
+    position: absolute;
+    left: 0; top: 0; right: 0; bottom: 0;
+    padding: 0;
+    z-index: 1;
+}
+.sp_nav_bar .container .HL_bg p {
+    position: absolute;
+    background: url(../images/sprite_image.png) no-repeat ; 
+    width: 2rem;
+    height: 1.8rem;
+    background-position: -442px 0;        
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);    
+    padding: 0
+}
+.sp_nav_MM, .sp_nav_SM {   
+    position: relative; 
+    width: 38rem;
+    line-height: 6rem;
+    font-weight: 400;
+    color: #222;      
+    cursor: pointer;  
+}
+.sp_nav_MM::after, .sp_nav_SM::after{
+    content: '';
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    border-right: 1px solid #ccc;  
+    box-sizing: border-box;       
+}
+.sp_nav_MM:hover, .sp_nav_SM:hover {
+    background: #009639;
+    transition: 0.2s;
+    color: #fff;
+}
+.sp_nav_menu, .sp_nav_sub {
+    position: absolute;
+    top: 6rem; left: 0; right: 0; bottom: 0;
+    height: 36rem;
+    z-index: 100;       
+    visibility: hidden;   
+    opacity: 0;
+    transition: 0.3s;
+}
+.sp_nav_menu .selected a, .sp_nav_sub .selected a {
+    background-color: #ccc;
+    font-weight:500;
+}
+.active .sp_nav_menu, .active .sp_nav_sub {
+    visibility: visible;   
+    opacity: 1; 
+}
+.sp_nav_menu div, .sp_nav_sub div{
+    background-color: #f2f2f2;
+    border-top: 1px solid #ccc; 
+    border-right: 1px solid #ccc;  
+    border-left: 1px solid #ccc;  
+    box-sizing: border-box;        
+}
+.sp_nav_menu div:last-child, .sp_nav_sub div:last-child{
+    border-bottom: 1px solid #ccc;
+}
+.sp_nav_menu div:hover, .sp_nav_sub div:hover {
+    background-color: #ccc;
+}
+.sp_nav_bar .container p, .sp_nav_bar .container a{
+    display: inline-block;
+    padding-left: 3rem;
+    box-sizing: border-box;
+}
+.sp_nav_bar .container a {
+    width: 100%;
+    height: 100%;
+}
+.sp_nav_MM span, .sp_nav_SM span {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 3rem;    
+    transition: transform 0.4s;
+}
+.sp_nav_MM.active span, .sp_nav_SM.active span {
+    transform: rotate(180deg) translateY(50%);
+}
+
+/* -------------------- subpage mainbanner -------------------- */
+.main_banner{
+    position: relative;
+    width: 100vw;
+    height: 40rem;    
+}
+.main_banner:after{
+    content: '';
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background: linear-gradient(to bottom, rgba(0,0,0,.3) 50%, rgba(255,255,255,0));        
+}
+.main_banner > .main_tt {
+    position: absolute;
+    left: 50%;
+    top: 60%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    z-index: 1;
+    text-shadow: 0.1rem 0.1rem 0.3rem rgba(0,0,0,.3);
+}
+/* -------------------- toggle menu -------------------- */
+.toggle {
+    display: none;
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    z-index: 101;
+    background: #fff;    
+}
+.toggle .flex_box {
+    display: flex;
+    height: 100%;
+}
+.toggle .close {
+    cursor: pointer;
+    position: absolute;
+    right: 8.1rem;
+    top: 8.1rem;
+    width: 6rem;
+    height: 6rem;
+    border: 1px solid #e3e3e3;    
+    transition: background .5s;
+}
+.toggle .close span {
+    position: absolute;
+    font-size: 48px;
+    left: 50%; top: 50%;
+    transform: translate(-50%, -50%);   
+}
+.toggle .flex_box h2 {
+    font-size: 3.6rem;
+    font-weight: 400;
+    color: #222;
+    margin-bottom: 6.5rem;
+    transition: color .5s;
+}
+.toggle .flex_box a {
+    font-size: 1.8rem;
+    color: #999;    
+}
+.toggle .flex_box a:hover {
+    color:#009639;
+    font-weight: 400;
+}
+.toggle .flex_box > div {
+    align-self: center;
+    height: 100%;
+}
+.toggle .flex_box > div:not(:first-child) {
+    padding-left: 3.5rem;
+    box-sizing: border-box;
+    width: 11.5%;
+    border-right: 1px solid #e9e9e9;    
+}
+.toggle .flex_box > div:last-child {
+    border: none;
+}
+.toggle .flex_box > div .txt_box {
+    position: absolute;
+    top: 25rem;
+}
+.toggle .flex_box > div .txt_box li {
+    margin-bottom: 3rem;
+}
+.toggle .flex_box .site_map {
+    font-size: 2.4rem;    
+    color: #fff;
+    width: 20%;         
+    background: linear-gradient(140deg, #009639 0%, #d2b17e 100%);    
+    overflow: hidden;
+    position: relative;
+}
+.toggle .flex_box .site_map::before {
+    content: '';
+    position: absolute;
+    top: 67%;
+    left: 30%;    
+    width: 51rem;
+    height: 46rem;
+    background: url(../images/toggle_logo.png) no-repeat;
+    opacity: 0.2;
+
+}
+.toggle .flex_box .site_map p {
+    position: absolute;
+    top: 50%;
+    box-sizing: border-box;
+    transform: translateY(-50%);
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 0.2rem;
+    margin-left: 6rem;
+}
+.toggle .flex_box .site_map p:after {
+    content: '';
+    position: absolute;
+    width: 10rem;
+    height: 0.1rem;
+    top: 50%;
+    transform: translateY(-50%);
+    left: calc(100% + 2rem);
+    background: #fff;    
+
+}
+.toggle .flex_box .introduce {    
+    margin-left: 3.6%;     
+}

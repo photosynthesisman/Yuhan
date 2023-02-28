@@ -1,0 +1,587 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>유한양행 리뉴얼</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Two+Tone" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Round" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Sharp" rel="stylesheet">  
+    
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/map.css">
+    <link rel="stylesheet" href="css/responsive.css">
+
+    <link rel="shortcut icon" href="images/favicon/favicon.ico">
+    <link rel="apple-touch-icon" sizes="57x57" href="images/favicon/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="images/favicon/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="images/favicon/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="images/favicon/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="images/favicon/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="images/favicon/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="images/favicon/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="images/favicon/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="images/favicon/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="images/favicon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="images/favicon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon/favicon-16x16.png">
+    <link rel="manifest" href="images/favicon/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="images/favicon/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js" integrity="sha512-3n19xznO0ubPpSwYCRRBgHh63DrV+bdZfHK52b1esvId4GsfwStQNPJFjeQos2h3JwCmZl0/LgLxSKMAI55hgw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>      
+    
+    <script src="js/sub.js"></script>    
+</head>
+<body>
+    <header> 
+        <div class="sub_bg"></div>       
+        <div class="header_box">            
+            <div class="header_wrap">  
+                <h1 class="logo"><a href="./index.html">YUHAN logo</a></h1>
+                <nav>                      
+                    <ul class="mainMenu">
+                        <li><a href="" class="con_subOfsub">유한소개</a>
+                            <ul class="subMenu company">
+                                <li><a href="./intro.html">회사개요</a></li>
+                                <li><a href="">CEO 메시지</a></li>
+                                <li><a href="./history.html">회사연혁</a></li>
+                                <li><a href="">가족회사</a></li>
+                                <li><a href="./map.html">오시는 길</a></li>
+                                <li><a href="./yuilhan.html">창업자유일한</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="" class="con_subOfsub">제품정보</a>
+                            <ul class="subMenu product">
+                                <li><a href="./product.html">제품검색</a></li>
+                                <li><a href="">제품소식</a></li>
+                                <li><a href="">제품 외형별 검색</a></li>
+                                <li><a href="">가정상비약</a></li>
+                                <li><a href="./brand.html">브랜드 이야기</a></li>
+                                <li><a href="">약국찾기</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="" class="con_subOfsub">연구개발</a>
+                            <ul class="subMenu">
+                                <li><a href="">미션 & 비젼</a></li>
+                                <li><a href="">연구개발 전략</a></li>
+                                <li><a href="">연구개발 활동</a></li>
+                                <li><a href="">파이프라인</a></li>
+                                <li><a href="">연구결과 발표</a></li>
+                                <li><a href="">주요성과</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="" class="con_subOfsub">투자정보</a>
+                            <ul class="subMenu">
+                                <li><a href="">공시정보</a></li>
+                                <li><a href="">재무정보</a></li>
+                                <li><a href="">주식정보</a></li>
+                                <li><a href="">기업지배구조</a></li>
+                                <li><a href="">IR 자료실</a></li>
+                                <li><a href="">ANNUAL REPORT</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="" class="con_subOfsub">홍보</a>
+                            <ul class="subMenu">
+                                <li><a href="">언론보도</a></li>
+                                <li><a href="">건강의 벗</a></li>
+                                <li><a href="./ci.html">CI소개</a></li>
+                                <li><a href="">미디어</a></li>
+                                <li><a href="">공지사항</a></li>                                
+                            </ul>
+                        </li>
+                        <li><a href="" class="con_subOfsub">CSR</a>
+                            <ul class="subMenu">
+                                <li><a href="">준법경영</a></li>
+                                <li><a href="">사회공헌</a></li>
+                                <li><a href="">환경&middot;안전경영</a></li>
+                                <li><a href="">부패방지방침</a></li>
+                            </ul>
+                        </li>
+                    </ul>                   
+                </nav>
+                <ul class="recruit_lang">
+                    <li><a href="">인재채용</a></li>                    
+                    <li class="lnag_kor">
+                        <a href="">KOR</a>
+                        <span class="material-icons-sharp">expand_more</span>
+                        <a href="" class="lang hidden">ENG</a>
+                    </li>                                           
+                    <li>
+                        <span class="material-icons-sharp toggle_pc active">menu</span>
+                    </li>
+                </ul>    
+            </div>                     
+        </div>          
+    </header>  
+    <main>
+        <div class="toggle">
+            <div class="flex_box">
+                <div class="site_map">
+                    <p class="eng">site map</p>
+                </div>
+                <div class="introduce">
+                    <div class="txt_box">
+                        <h2>유한소개</h2>
+                        <ul>
+                            <li><a href="./intro.html">회사개요</a></li>
+                            <li><a href=""><em class="eng">CEO</em>메시지</a></li>
+                            <li><a href="./history.html">회사연혁</a></li>
+                            <li><a href="">가족회사</a></li>
+                            <li><a href="./map.html">오시는 길</a></li>
+                            <li><a href="./yuilhan.html">창업자 유일한</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="product">
+                    <div class="txt_box">
+                        <h2>제품정보</h2>
+                        <ul>
+                            <li><a href="./product.html">제품검색</a></li>
+                            <li><a href="">제품소식</a></li>
+                            <li><a href="">제품 외형별 검색</a></li>
+                            <li><a href="">가정상비약</a></li>
+                            <li><a href="./brand.html">브랜드 이야기</a></li>
+                            <li><a href="">약국찾기</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="rnd">
+                    <div class="txt_box">
+                        <h2>연구개발</h2>
+                        <ul>
+                            <li><a href="">미션&amp;비전</a></li>
+                            <li><a href="">연구개발 전략</a></li>
+                            <li><a href="">연구개발 활동</a></li>
+                            <li><a href="">파이프라인</a></li>
+                            <li><a href="">연구결과 발표</a></li>
+                            <li><a href="">주요성과</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="invest">
+                    <div class="txt_box">
+                        <h2>투자정보</h2>
+                        <ul>
+                            <li><a href="">공시정보</a></li>
+                            <li><a href="">재무정보</a></li>
+                            <li><a href="">주식정보</a></li>
+                            <li><a href="">기업지배구조</a></li>
+                            <li><a href=""><em class="eng">IR</em>자료실</a></li>
+                            <li><a href="" class="eng">Annual Report</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="promote">
+                    <div class="txt_box">
+                        <h2>홍보</h2>
+                        <ul>
+                            <li><a href="">언론보도</a></li>
+                            <li><a href="">건강의 벗</a></li>
+                            <li><a href="./ci.html"><em class="eng">CI</em> 소개</a></li>
+                            <li><a href="">미디어</a></li>
+                            <li><a href="">공지사항</a></li>                    
+                        </ul>
+                    </div>
+                </div>
+                <div class="csr">
+                    <div class="txt_box">
+                        <h2 class="eng">CSR</h2>
+                        <ul>
+                            <li><a href="">준법경영</a></li>
+                            <li><a href="">사회공헌</a></li>
+                            <li><a href="">환경&middot;안전경영</a></li>
+                            <li><a href="">부패방지방침</a></li>
+                        </ul>
+                    </div>
+                </div>            
+            </div>
+            <div class="close">
+                <span class="material-icons-sharp">close</span>
+            </div>
+        </div>   
+        <div class="side_box">
+            <div class="logo_box">
+                <h2 class="side_logo"><a href="./index.html">side_logo</a></h2>
+                <span class="material-icons-sharp close">add</span>
+            </div>
+            <nav>                      
+                <ul class="sideMenu">
+                    <li><a href="" class="cf">유한소개<span class="material-icons-sharp">add</span></a>
+                        <ul class="sideMenu_sub company">
+                            <li><a href="./intro.html">회사개요</a></li>
+                            <li><a href="">CEO 메시지</a></li>
+                            <li><a href="./history.html">회사연혁</a></li>
+                            <li><a href="">가족회사</a></li>
+                            <li><a href="./map.html">오시는 길</a></li>
+                            <li><a href="./yuilhan.html">창업자유일한</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="" class="cf">제품정보<span class="material-icons-sharp">add</span></a>
+                        <ul class="sideMenu_sub product">
+                            <li><a href="./product.html">제품검색</a></li>
+                            <li><a href="">제품소식</a></li>
+                            <li><a href="">제품 외형별 검색</a></li>
+                            <li><a href="">가정상비약</a></li>
+                            <li><a href="./brand.html">브랜드 이야기</a></li>
+                            <li><a href="">약국찾기</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="" class="cf">연구개발<span class="material-icons-sharp">add</span></a>
+                        <ul class="sideMenu_sub">
+                            <li><a href="">미션 & 비젼</a></li>
+                            <li><a href="">연구개발 전략</a></li>
+                            <li><a href="">연구개발 활동</a></li>
+                            <li><a href="">파이프라인</a></li>
+                            <li><a href="">연구결과 발표</a></li>
+                            <li><a href="">주요성과</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="" class="cf">투자정보<span class="material-icons-sharp">add</span></a>
+                        <ul class="sideMenu_sub">
+                            <li><a href="">공시정보</a></li>
+                            <li><a href="">재무정보</a></li>
+                            <li><a href="">주식정보</a></li>
+                            <li><a href="">기업지배구조</a></li>
+                            <li><a href="">IR 자료실</a></li>
+                            <li><a href="">ANNUAL REPORT</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="" class="cf">홍보<span class="material-icons-sharp">add</span></a>
+                        <ul class="sideMenu_sub">
+                            <li><a href="">언론보도</a></li>
+                            <li><a href="">건강의 벗</a></li>
+                            <li><a href="./ci.html">CI소개</a></li>
+                            <li><a href="">미디어</a></li>
+                            <li><a href="">공지사항</a></li>                                
+                        </ul>
+                    </li>
+                    <li><a href="" class="cf">CSR<span class="material-icons-sharp">add</span></a>
+                        <ul class="sideMenu_sub">
+                            <li><a href="">준법경영</a></li>
+                            <li><a href="">사회공헌</a></li>
+                            <li><a href="">환경&middot;안전경영</a></li>
+                            <li><a href="">부패방지방침</a></li>
+                        </ul>
+                    </li>
+                </ul>                   
+            </nav>
+            <div class="side_sub">
+                <div class="side_sub_flex">
+                    <div class="side_recurit"><a href="">인재채용</a></div>
+                    <div class="side_lang"><a href="">KOR<span class="material-icons-sharp">keyboard_arrow_down</span></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="side_nav"></div>   
+        <section class="main_banner">            
+            <h2 class="main_tt">오시는 길</h2>            
+        </section>
+        <section class="sp_nav_bar">  
+            <h2 class="sp_nav_tt hidden">서브페이지 네비게이션바</h2>          
+            <div class="container">
+                <div class="HL_bg">
+                    <a href="./index.html" class="indent">메인페이지 바로가기</a>
+                    <p></p>
+                </div>
+                <div class="sp_nav_MM">
+                    <div>
+                        <p>유한소개</p>
+                        <span class="material-icons-sharp">expand_more</span>
+                    </div>
+                    <div class="sp_nav_menu">
+                        <div class="selected"><a href="">유한소개</a></div>
+                        <div><a href="">제품정보</a></div>
+                        <div><a href="">연구개발</a></div>
+                        <div><a href="">투자정보</a></div>
+                        <div><a href="./ci.html">홍보</a></div>
+                        <div><a href="">CSR</a></div>                        
+                    </div>
+                </div>
+                <div class="sp_nav_SM">
+                    <div>
+                        <p>오시는 길</p>
+                        <span class="material-icons-sharp">expand_more</span>
+                    </div>
+                    <div class="sp_nav_sub">
+                        <div class=""><a href="">회사개요</a></div>
+                        <div><a href="">CEO 메시지</a></div>
+                        <div><a href="./history.html">회사연혁</a></div>
+                        <div><a href="">가족회사</a></div>
+                        <div class="selected"><a href="./map.html">오시는 길</a></div>                        
+                        <div><a href="./yuilhan.html">창업자 유일한</a></div>                        
+                    </div>
+                </div>
+            </div>     
+        </section>
+        <section class="map container">            
+            <h2 class="hidden">map section header</h2>
+            <ul class="tab_wrapper">
+                <li><a href="#company" class="active con_subOfsub HL_tt">유한양행 본사</a></li>
+                <li><a href="#factory" class="con_subOfsub HL_tt">청주공장</a></li>
+                <li><a href="#laboratory" class="con_subOfsub HL_tt">중앙연구소</a></li>
+            </ul>
+            <div id="company">
+                <div id="map1" style="width:100%;height:50rem;"></div>
+                <script src="//dapi.kakao.com/v2/maps/sdk.js?appkey=acea8ac01a6f26384d7f7f4ed1f94bc1"></script>                
+                <div class="map_table">
+                    <table>
+                        <caption class="hidden">본사 위치</caption>    
+                        <colgroup>
+                            <col style="width:20rem">
+                            <col style="width:auto">
+                        </colgroup>                    
+                        <tbody>
+                            <tr>
+                                <th>주소</th>
+                                <td>서울특별시 동작구 노량진로 74 (대방동)</td>
+                            </tr>
+                            <tr>
+                                <th>전화번호 / 팩스</th>
+                                <td>02-828-0000 /  02-828-0301 </td>
+                            </tr>
+                            <tr>
+                                <th>오시는 길</th>
+                                <td>
+                                    <div class="traffic">
+                                        <span class="material-icons-sharp">subway</span>
+                                        <p>지하철 1호선 대방역 2번출구로 나와 노량진 방향으로 600m</p>
+                                        <p>지하철 9호선 노량진역 6번 출구로 나와 대방역 방향으로 500m</p>                                           
+                                    </div>
+                                    <div class="traffic">
+                                        <span class="material-icons-sharp">directions_bus_filled</span>
+                                        <p>간선 150, 605, 640, 641, 650, 462, 507, 360 / 지선 6515, 5531, 6211, 6411 / 광역 9408</p>
+                                        <p>마을 동작 13-1, 동작01, 동작03, 동작 08, 동작13</p>
+                                    </div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>               
+            </div>
+            <div id="factory">
+                <div id="map2" style="width:100%;height:50rem;"></div>
+                <script src="//dapi.kakao.com/v2/maps/sdk.js?appkey=acea8ac01a6f26384d7f7f4ed1f94bc1"></script>                
+                <div class="map_table">
+                    <table>
+                        <caption class="hidden">공장 위치</caption>    
+                        <colgroup>
+                            <col style="width:20rem">
+                            <col style="width:auto">
+                        </colgroup>                    
+                        <tbody>
+                            <tr>
+                                <th>주소</th>
+                                <td>충북 청주시 청원구 오창읍 연구단지로 219</td>
+                            </tr>
+                            <tr>
+                                <th>전화번호 / 팩스</th>
+                                <td>043-240-0000 / 043-240-0001 </td>
+                            </tr>
+                            <tr>
+                                <th>오시는 길</th>
+                                <td>
+                                    <div class="traffic">
+                                        <span class="material-icons-sharp">directions_bus_filled</span>                                        
+                                        <p>서울남부터미널 -> 오창산업단지정류소</p>
+                                    </div>
+                                    <div class="traffic">
+                                        <span class="material-icons-sharp">drive_eta</span>
+                                        <p>중부고속도로 오창IC에서 3분 소요</p>
+                                    </div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>               
+            </div>
+            <div id="laboratory">
+                <div id="map3" style="width:100%;height:50rem;"></div>
+                <script src="//dapi.kakao.com/v2/maps/sdk.js?appkey=acea8ac01a6f26384d7f7f4ed1f94bc1"></script>                
+                <div class="map_table">
+                    <table>
+                        <caption class="hidden">연구소 위치</caption>    
+                        <colgroup>
+                            <col style="width:20rem">
+                            <col style="width:auto">
+                        </colgroup>                    
+                        <tbody>
+                            <tr>
+                                <th>주소</th>
+                                <td>경기도 용인시 기흥구 탑실로35번길 25 (공세동)</td>
+                            </tr>
+                            <tr>
+                                <th>전화번호 / 팩스</th>
+                                <td>031-889-0000 /  031-275-0001 </td>
+                            </tr>
+                            <tr>
+                                <th>오시는 길</th>
+                                <td>
+                                    <div class="traffic">
+                                        <span class="material-icons-sharp">subway</span>
+                                        <p>지하철 1호선 대방역 2번출구로 나와 노량진 방향으로 600m</p>
+                                        <p>지하철 9호선 노량진역 6번 출구로 나와 대방역 방향으로 500m</p>
+                                    </div>
+                                    <div class="traffic">
+                                        <span class="material-icons-sharp">directions_bus_filled</span>
+                                        <p>강남역, 신논현역, 양재역에서 직행버스 1560번 이용</p>                                            
+                                        <p>신갈오거리에서 일반버스 58, 116-1, 마을버스 38, 51-1번 이용</p>
+                                    </div>
+                                    <div class="traffic">
+                                        <span class="material-icons-sharp">drive_eta</span>
+                                        <p>경부고속도로 수원IC 또는 기흥IC에서 약 15~20분 소요</p>
+                                    </div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>               
+            </div>
+        </section>            
+    </main>
+    <footer>
+        <div class="container">
+            <div class="second_floor">
+                <div class="site_box">
+                    <ul class="site">
+                        <li><a href="">사이트이용약관</a></li>
+                        <li><a href="">개인정보처리방침</a></li>
+                        <li><a href="">영상정보처리기기 운영관리 방침</a></li>
+                        <li><a href="">이메일무단수집거부</a></li>
+                        <li><a href="">스팸정책</a></li>
+                        <li><a href="">법적고지</a></li>
+                        <li><a href="">사이트이용 도움말</a></li>
+                    </ul>
+                </div>
+                <div class="FB_box">
+                    <div class="family_box">
+                        <ul class="family_main">
+                            <li class="st"><p class="emphasis">Family Site</p><span class="material-icons-sharp">expand_more</span>
+                                <ul class="family">
+                                    <li><a href="">삐콤씨</a></li>
+                                    <li><a href="">센스데이</a></li>
+                                    <li><a href="">지르텍</a></li>
+                                    <li><a href="">유한킴벌리</a></li>
+                                    <li><a href="">유한크로락스</a></li>
+                                    <li><a href="">유한메디카</a></li>                            
+                                </ul>  
+                            </li>
+                        </ul>                                                    
+                    </div>                    
+                    <div class="gotop" data-menuanchor="page1">
+                        <a href="" class="indent">to page top</a>
+                        <span class="material-icons-sharp">arrow_drop_up</span>
+                        <p>top</p>                                   
+                    </div>    
+                </div>                                                        
+            </div>
+            <div class="first_floor cf">
+                <h1>yuhan logo</h1>
+                <div class="txt">
+                    <ul class="cf">
+                        <li>서울시 동작구 노량진로 74 </li>
+                        <li>문의전화 : 02)828-0181</li>
+                        <li>FAX : 02)828-0050</li>
+                        <li>대표자 : 조욱제</li>
+                        <li>사업자등록번호 : 118-81-00601</li>
+                    </ul>
+                    <p>Copyright &copy; YUHAN. All right reserved.</p>                
+                </div>
+            </div>
+        </div>  
+        <hr>          
+    </footer>  
+    <script>  
+		var mapContainer1 = document.getElementById('map1');
+		var mapOptions1 = {
+			center: new kakao.maps.LatLng(37.512652302975376, 126.93393332119236),
+			level: 3
+		};
+
+        var map1 = new kakao.maps.Map(mapContainer1, mapOptions1);
+        
+        var imageSrc = 'https://res.cloudinary.com/photosynthesisbo2/image/upload/v1634465433/yuhanMaker_r86d6k.png', // 마커이미지의 주소
+            imageSize = new kakao.maps.Size(70, 113), // 마커이미지의 크기
+            imageOption1 = {offset: new kakao.maps.Point(35, 135)}; // 마커이미지의 옵션
+
+        var markerImage1 = new kakao.maps.MarkerImage(imageSrc, imageSize, imageOption1),
+            markerPosition1  = new kakao.maps.LatLng(37.512652302975376, 126.93393332119236); 
+
+
+        var marker1 = new kakao.maps.Marker({
+            position: markerPosition1,
+            image: markerImage1
+        });
+
+        marker1.setMap(map1);
+
+		var mapContainer2 = document.getElementById('map2');
+		var mapOptions2 = {
+			center: new kakao.maps.LatLng(36.714378693018965, 127.43664765377369),
+			level: 3
+		};
+
+        var map2 = new kakao.maps.Map(mapContainer2, mapOptions2);
+        
+        var imageOption2 = {offset: new kakao.maps.Point(65, 70)}; // 마커이미지의 옵션
+
+        var markerImage2 = new kakao.maps.MarkerImage(imageSrc, imageSize, imageOption2),
+            markerPosition2  = new kakao.maps.LatLng(36.714378693018965, 127.43664765377369); 
+
+
+        var marker2 = new kakao.maps.Marker({
+            position: markerPosition2,
+            image: markerImage2
+        });
+
+        marker2.setMap(map2);
+
+
+		var mapContainer3 = document.getElementById('map3');
+		var mapOptions3 = {
+			center: new kakao.maps.LatLng(37.24175012564519, 127.11014028261941),
+			level: 3
+		};
+
+        var map3 = new kakao.maps.Map(mapContainer3, mapOptions3);
+        
+        var imageOption3 = {offset: new kakao.maps.Point(45, 100)}; // 마커이미지의 옵션
+
+        var markerImage3 = new kakao.maps.MarkerImage(imageSrc, imageSize, imageOption3),
+            markerPosition3  = new kakao.maps.LatLng(37.24175012564519, 127.11014028261941); 
+
+
+        var marker3 = new kakao.maps.Marker({
+            position: markerPosition3,
+            image: markerImage3
+        });
+
+        marker3.setMap(map3);
+
+        var tabMenu = $('.tab_wrapper li a');
+        var tabContent = $('.map.container > div');
+        
+        tabMenu.click(function(e){
+            e.preventDefault();   
+            tabContent.hide();
+
+            var targetIdx = $(this).parent().index();            
+            tabContent.eq(targetIdx).show();
+
+            tabMenu.removeClass('active');    
+            $(this).addClass('active');
+            $(this).parent().siblings().find('a').removeClass('active');        
+        });
+
+        tabMenu.eq(0).trigger('click');
+        </script>  
+</body>
+</html>
