@@ -1,62 +1,62 @@
 $(function(){             
-    $('#fullPage').fullpage({
-        slideSelector: '.FPslide',  
-        anchors: ['page1', 'page2', 'page3', 'page4'],      
-        navigation: true,
-        navigationTooltips: ['Home', 'Product', 'RnD', 'NewsNJR'],
-        showActiveTooltip: true,  
-        scrollingSpeed: 600,              
-        afterLoad: function(anchorLink, index){            
-            if(index == 1){
-                $('#fp-nav').addClass('white');    
-                $('.reson_nav div:first-child').addClass('active'); 
-                $('.header_wrap').removeClass('fixed');  
-                $('.header_wrap').mouseout(function(){         
-                    $(this).removeClass('fixed');         
-                });                        
-            }else{
-                $('#fp-nav').removeClass('white');  
-                $('.reson_nav div:first-child').removeClass('active');    
-                $('.header_wrap').mouseout(function(){         
-                    $(this).addClass('fixed');         
-                });                                                                                                                
-            };         
-            if(index == 2){                
-                $('.Product .container').addClass('Up');   
-                $('.reson_nav div:nth-child(2)').addClass('active');
-                $('.header_wrap').addClass('fixed');     
-            }else{
-                $('.Product .container').removeClass('Up');
-                $('.reson_nav div:nth-child(2)').removeClass('active');                
-            };
-            if(index == 3){                
-                $('.RnD .container').addClass('Up');   
-                $('.reson_nav div:nth-child(3)').addClass('active');  
-                $('.header_wrap').addClass('fixed');                
-            }else{
-                $('.RnD .container').removeClass('Up');     
-                $('.reson_nav div:nth-child(3)').removeClass('active');              
-            };
-            if(index == 4){
-                $('.reson_nav div:last-child').addClass('active');                 
-            }else{
-                $('.reson_nav div:last-child').removeClass('active');
-            };
-            if(index == 4 || index ==5){                
-                $('.NewsNJR .second_floor').animate({opacity:1,paddingBottom:0},600);
-                $('.NewsNJR .first_floor').animate({opacity:1},600);
-                $('.header_wrap').addClass('fixed');     
-            }else{
-                $('.NewsNJR .second_floor').animate({opacity:0,paddingBottom:'5rem'},600);
-                $('.NewsNJR .first_floor').animate({opacity:0},600);     
-            };
-            if(index ==5){
-                $('.reson_nav').hide();  
-            }else{
-                $('.reson_nav').show();  
-            }
-        },    
-    });   
+    // $('#fullPage').fullpage({
+    //     slideSelector: '.FPslide',  
+    //     anchors: ['page1', 'page2', 'page3', 'page4'],      
+    //     navigation: true,
+    //     navigationTooltips: ['Home', 'Product', 'RnD', 'NewsNJR'],
+    //     showActiveTooltip: true,  
+    //     scrollingSpeed: 600,              
+    //     afterLoad: function(anchorLink, index){            
+    //         if(index == 1){
+    //             $('#fp-nav').addClass('white');    
+    //             $('.reson_nav div:first-child').addClass('active'); 
+    //             $('.header_wrap').removeClass('fixed');  
+    //             $('.header_wrap').mouseout(function(){         
+    //                 $(this).removeClass('fixed');         
+    //             });                        
+    //         }else{
+    //             $('#fp-nav').removeClass('white');  
+    //             $('.reson_nav div:first-child').removeClass('active');    
+    //             $('.header_wrap').mouseout(function(){         
+    //                 $(this).addClass('fixed');         
+    //             });                                                                                                                
+    //         };         
+    //         if(index == 2){                
+    //             $('.Product .container').addClass('Up');   
+    //             $('.reson_nav div:nth-child(2)').addClass('active');
+    //             $('.header_wrap').addClass('fixed');     
+    //         }else{
+    //             $('.Product .container').removeClass('Up');
+    //             $('.reson_nav div:nth-child(2)').removeClass('active');                
+    //         };
+    //         if(index == 3){                
+    //             $('.RnD .container').addClass('Up');   
+    //             $('.reson_nav div:nth-child(3)').addClass('active');  
+    //             $('.header_wrap').addClass('fixed');                
+    //         }else{
+    //             $('.RnD .container').removeClass('Up');     
+    //             $('.reson_nav div:nth-child(3)').removeClass('active');              
+    //         };
+    //         if(index == 4){
+    //             $('.reson_nav div:last-child').addClass('active');                 
+    //         }else{
+    //             $('.reson_nav div:last-child').removeClass('active');
+    //         };
+    //         if(index == 4 || index ==5){                
+    //             $('.NewsNJR .second_floor').animate({opacity:1,paddingBottom:0},600);
+    //             $('.NewsNJR .first_floor').animate({opacity:1},600);
+    //             $('.header_wrap').addClass('fixed');     
+    //         }else{
+    //             $('.NewsNJR .second_floor').animate({opacity:0,paddingBottom:'5rem'},600);
+    //             $('.NewsNJR .first_floor').animate({opacity:0},600);     
+    //         };
+    //         if(index ==5){
+    //             $('.reson_nav').hide();  
+    //         }else{
+    //             $('.reson_nav').show();  
+    //         }
+    //     },    
+    // });   
 
     var headerWrap = $('.header_wrap'),        
         subBg = $('.sub_bg'),
